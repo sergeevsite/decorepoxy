@@ -1,0 +1,40 @@
+.works
+  &-slider
+    &__link
+      outline: none
+      text-decoration: none
+
+    &__item
+      display: flex
+      flex-direction: column
+      text-align: center
+      padding: 0 10px
+      &:hover
+        .works-slider__text
+          transition: 0.2s
+          color: $second-color
+          text-decoration: underline
+    &__image
+      margin-bottom: 30px
+    &__text
+      font-size: 18px
+      color: $main-color
+      margin-bottom: 8px
+    &__price
+      +reg
+      font-size: 22px
+      color: $second-color
+  &-controls
+    position: relative
+    &__left
+      position: absolute
+      left: -70px
+      bottom: 160px
+      width: 50px
+      cursor: pointer
+    &__right
+      position: absolute
+      right: -70px
+      bottom: 160px
+      width: 50px
+      cursor: pointer

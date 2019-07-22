@@ -6,8 +6,391 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Decor Epoxy</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.theme.default.min.css">
 </head>
 <body>
-   
+<!-- Шапка -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-block">
+        <!-- Логотип -->
+        <div class="logo navbar__logo">
+         <a href="#"><img src="./img/navbar/logo.png" alt="Логотип"></a>
+        </div>
+        <!-- Меню -->
+        <div class="menu navbar__menu">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#" class="navbar__text">Каталог изделий</a></li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__text">О компании</a></li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__text">Новости</a></li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__text">Контакты</a></li>
+          </ul>
+        </div>
+        <!-- Контакты с кнопкой -->
+        <div class="info navbar__info">
+          <a href="tel:+78432495388" class="navbar__phone"><img src="./img/navbar/phone.svg" alt="Телефон">+7 (843) 249-53-88</a>
+          <button class="button callback navbar__button">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-block">
+          <div class="hero-text">
+            <h1 class="hero-text__title">Мастерская по изготовлению мебели</h1>
+            <!-- /.hero-text__title -->
+            <span class="hero-text__subtitle">Столы из натурального дерева и эпоксидной смолы <br> для уюта в вашем доме.</span>
+            <!-- /.hero-text__subtitle -->
+          </div>
+          <!-- /.hero-text -->
+          <div class="hero-button">
+            <button class="button hero-button__catalog">Каталог изделий</button> 
+            <!-- /.hero-button__catalog -->
+            <button class="button hero-button__order">Оформить заказ</button> 
+            <!-- /.hero-button__order -->
+          </div>
+          <!-- /.hero-button -->
+        </div>
+        <!-- /.hero-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hero -->
+
+    <section class="section catalog">
+      <div class="container">
+        <div class="catalog-block">
+          <h2 class="section-title catalog__title">ЧТО МЫ ДЕЛАЕМ?</h2>
+          <!-- /.section-title catalog__title -->
+          <div class="cards">
+            <div class="card catalog__card">
+              <img src="./img/catalog/table.jpg" alt="Столы" class="card__image">
+              <div class="card-wrap">
+                <div class="card__line"></div>
+                <div class="card__title">Столы</div>
+              </div>
+              <span class="card__number">01</span>
+              <p class="card__description">Обеденные, письменные, журнальные</p>
+            </div>
+            <div class="card catalog__card">
+              <img src="./img/catalog/wood-desktop.jpg" alt="Столешницы из дерева" class="card__image">
+              <div class="card-wrap">
+                <div class="card__line"></div>
+                <div class="card__title">Столешницы из дерева</div>
+              </div>
+              <span class="card__number">02</span>
+              <p class="card__description">Барные столешницы для кухни</p>
+            </div>
+            <div class="card catalog__card">
+              <img src="./img/catalog/storage-furniture.jpg" alt="Мебель для хранения" class="card__image">
+              <div class="card-wrap">
+                <div class="card__line"></div>
+                <div class="card__title">Мебель для хранения</div>
+              </div>
+              <span class="card__number">03</span>
+              <p class="card__description">Шкафы, тумбочки, полки</p>
+            </div>
+            <div class="card catalog__card">
+              <img src="./img/catalog/bed.jpg" alt="Кровати" class="card__image">
+              <div class="card-wrap">
+                <div class="card__line"></div>
+                <div class="card__title">Кровати</div>
+              </div>
+              <span class="card__number">04</span>
+              <p class="card__description">Кровати из дерева</p>
+            </div>
+            <div class="card catalog__card">
+              <img src="./img/catalog/couch.jpg" alt="Диваны" class="card__image">
+              <div class="card-wrap">
+                <div class="card__line"></div>
+                <div class="card__title">Диваны</div>
+              </div>
+              <span class="card__number">05</span>
+              <p class="card__description">Диваны для гостинной и кухни</p>
+            </div>
+            <div class="card catalog__card">
+              <img src="./img/catalog/casket.jpg" alt="Шкатулки" class="card__image">
+              <div class="card-wrap">
+                <div class="card__line"></div>
+                <div class="card__title">Шкатулки</div>
+              </div>
+              <span class="card__number">06</span>
+              <p class="card__description">Шкатулки для хранения</p>
+            </div>
+          </div>
+          <!-- /.cards -->
+        </div>
+        <!-- /.catalog-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section catalog -->
+
+    <section class="section advantages">
+      <div class="container">
+        <div class="advantages-block">
+          <h2 class="section-title advantages__title">ПРЕИМУЩЕСТВА ИЗДЕЛИЙ</h2>
+          <!-- /.section-title advantages__title -->
+          <div class="advantage">
+            <div class="advantage-wrap">
+              <div class="advantage__item">
+                <div class="advantage__image">
+                  <span class="advantage__number">01</span>
+                  <img src="./img/advantages/tree-house.png" alt="">
+                </div>
+                <span class="advantage__title">Свойства Материала</span>
+              </div>
+              <p class="advantage__text">Материал является высокопрочным и не подвергается деформации. Его поверхность не боится механических повреждений.</p>
+            </div>
+            <div class="advantage-wrap">
+              <div class="advantage__item">
+                <div class="advantage__image">
+                  <span class="advantage__number">02</span>
+                  <img src="./img/advantages/table-water.png" alt="">
+                </div>
+                <span class="advantage__title">Стойкость к влаге</span>
+              </div>
+              <p class="advantage__text">Это одно из главных преимуществ перед деревянной поверхностью, что особенно актуально на кухне, где присутствует влажная среда.</p>
+            </div>
+            <div class="advantage-wrap">
+              <div class="advantage__item">
+                <div class="advantage__image">
+                  <span class="advantage__number">03</span>
+                  <img src="./img/advantages/cleanup.png" alt="">
+                </div>
+                <span class="advantage__title">Удобный уход</span>
+              </div>
+              <p class="advantage__text">Мебель не подвержена негативному влиянию большинства чистящих средств, уход за ней удобен и не требует дополнительных затрат.</p>
+            </div>
+            <div class="advantage-wrap">
+              <div class="advantage__item">
+                <div class="advantage__image">
+                  <span class="advantage__number">04</span>
+                  <img src="./img/advantages/table-sun.png" alt="">
+                </div>
+                <span class="advantage__title">Стойкость к износу</span>
+              </div>
+              <p class="advantage__text">Мебель эпоксидная с такой поверхностью не разрушается вследствие воздействия ультрафиолета, она надолго сохраняет свой безупречный внешний вид.</p>
+            </div>
+            <div class="advantage-wrap">
+              <div class="advantage__item">
+                <div class="advantage__image">
+                  <span class="advantage__number">05</span>
+                  <img src="./img/advantages/field.png" alt="">
+                </div>
+                <span class="advantage__title">Визуальное расширение пространства</span>
+              </div>
+              <p class="advantage__text">Материал является высокопрочным и не подвергается деформации. Его поверхность не боится механических повреждений.</p>
+            </div>
+          </div>
+        </div>
+        <!-- /.advantages-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section advantages -->
+
+    <section class="section works">
+      <div class="container">
+        <div class="works-block">
+          <h2 class="section-title works__title">Нaши работы</h2>
+          <!-- /.section-title works__title -->
+          <div class="owl-carousel works-slider">
+            <a href="#" class="works-slider__link">
+              <div class="works-slider__item">
+                <img src="./img/works/product-1.jpg" alt="" class="works-slider__image">
+                <span class="works-slider__text">Стол с заполнением камня</span>
+                <span class="works-slider__price">50 000 руб.</span>
+              </div>
+              <!-- /.works-slider__item -->
+            </a>
+            <!-- /.works-slider__link -->
+            <a href="#" class="works-slider__link">
+              <div class="works-slider__item">
+                <img src="./img/works/product-2.jpg" alt="" class="works-slider__image">
+                <span class="works-slider__text">Стол с заполнением камня</span>
+                <span class="works-slider__price">34 000 руб.</span>
+              </div>
+              <!-- /.works-slider__item -->
+            </a>
+            <!-- /.works-slider__link -->
+            <a href="#" class="works-slider__link">
+              <div class="works-slider__item">
+                <img src="./img/works/product-3.jpg" alt="" class="works-slider__image">
+                <span class="works-slider__text">Стол с заполнением камня</span>
+                <span class="works-slider__price">32 000 руб.</span>
+              </div>
+              <!-- /.works-slider__item -->
+            </a>
+            <!-- /.works-slider__link -->
+            <a href="#" class="works-slider__link">
+              <div class="works-slider__item">
+                <img src="./img/works/product-1.jpg" alt="" class="works-slider__image">
+                <span class="works-slider__text">Стол с заполнением камня</span>
+                <span class="works-slider__price">90 000 руб.</span>
+              </div>
+              <!-- /.works-slider__item -->
+            </a>
+            <!-- /.works-slider__link -->
+            <a href="#" class="works-slider__link">
+              <div class="works-slider__item">
+                <img src="./img/works/product-2.jpg" alt="" class="works-slider__image">
+                <span class="works-slider__text">Стол с заполнением камня</span>
+                <span class="works-slider__price">129 000 руб.</span>
+              </div>
+              <!-- /.works-slider__item -->
+            </a>
+            <!-- /.works-slider__link -->
+          </div>
+          <!-- /.slider -->
+          <div class="works-controls">
+            <div id="worksControlsLeft" href="#!" class="works-controls__left">
+              <img src="./img/works/left-arrow.svg" alt="">
+            </div>
+            <div id="worksControlsRight" href="#!" class="works-controls__right">
+              <img src="./img/works/right-arrow.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- /.works-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section works -->
+
+    <section class="section order">
+      <div class="container">
+        <div class="order-block">
+          <h2 class="section-title order__title">Оформить заказ</h2>
+          <span class="order__subtitle">После оформления заявки в течение 5 минут с вами свяжется менеджер</span>
+          <form action="#" class="form order__form">
+            <div class="form__title contacts">
+              <span class="form__text">Контактные данные</span>
+            </div>
+            <div class="form-input">
+              <input type="text" class="input form__name" placeholder="Введите имя">
+              <input type="tel" class="input form__tel" placeholder="Введите телефон">
+            </div>
+            <div class="form__title character">
+              <span class="form__text">Характеристики изделия</span>
+            </div>
+            <div class="form-input">
+              <span class="form__label">Размеры, см.</span>
+              <div class="form-dimension">
+                <input type="text" class="input form__length" placeholder="Длина" maxlength="3">
+                <input type="text" class="input form__width" placeholder="Ширина" maxlength="3">
+                <input type="text" class="input form__hight" placeholder="Высота" maxlength="3">
+              </div>
+              <span class="form__label">Порода дерева</span>
+              <div class="form__help"></div>
+              <div class="form-wood">
+                <div class="form__help">?</div>
+                <select class="input form__wood" name="wood" id="">
+                  <option value="Орех">Орех</option>
+                  <option value="Дуб">Дуб</option>
+                  <option value="Клен">Клен</option>
+                  <option value="Липа">Липа</option>
+                </select>
+              </div>
+              <span class="form__label">Цвет эпоксидной смолы</span>
+              <div class="form-color">
+                <div class="form__help">?</div>
+                <select class="input form__color" name="color" id="">
+                  <option value="Синий">Синий</option>
+                  <option value="Голубой">Голубой</option>
+                  <option value="Красный">Красный</option>
+                </select>
+              </div>
+              <span class="form__label">Дополнительно</span>
+              <div class="form-extra">
+                <textarea class="input form__extra" cols="30" rows="10" maxlength="170" placeholder="Введите дополнительные пожелания. Они будут учитываться при согласовании заявки."></textarea>
+              </div>
+              <button class="button form__button">Оформить заказ</button>
+            </div>
+          </form>
+        </div>
+        <!-- /.order-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section order -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <div class="footer__logo">
+          <img src="./img/footer/logoWhite.png" alt="">
+        </div>
+        <!-- /.footer-logo -->
+        <div class="footer-links">
+          <ul class="footer-links__list">
+            <li class="footer-links__item">
+              <span><a href="#">Главная</a></span>
+            </li>
+            <li class="footer-links__item">
+              <span><a href="#">О компании</a></span>
+            </li>
+            <li class="footer-links__item">
+              <span><a href="#">Каталог товаров</a></span>
+            </li>
+            <li class="footer-links__item">
+              <span><a href="#">Контакты</a></span>
+            </li>
+          </ul>
+          <ul class="footer-links__list">
+            <li class="footer-links__item">
+              <span><a href="#">Условия доставки</a></span>
+            </li>
+            <li class="footer-links__item">
+              <span><a href="#">Условия оплаты</a></span>
+            </li>
+            <li class="footer-links__item">
+              <span><a href="#">Акции</a></span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer-link -->
+        <div class="footer-social">
+          <div class="footer-social__instagram">
+            <img src="./img/footer/instagram.png" alt="Инстаграм">
+            <span><a href="https://www.instagram.com/decor_epoxy/" target="_blank">Мы в Instagram!</a></span>
+          </div>
+          <img class="footer-social__qrcode" src="./img/footer/qrcode.png" alt="">
+        </div>
+        <!-- /.footer-social -->
+        <div class="footer-contacts">
+          <a href="tel:+78432495388" class="footer-contacts__item phone"><img src="./img/footer/footerPhone.svg" alt="Телефон">+7 (843) 249-53-88</a>
+          <a href="https://wa.me/79274423768" class="footer-contacts__item whatsapp"><img src="./img/footer/whatsapp.svg" alt="whatsapp">+7 (927) 442-37-68</a>
+          <a href="mailto:decorepoxy@mail.ru" class="footer-contacts__item email"><img src="./img/footer/envelope.svg" alt="Почта">decorepoxy@mail.ru</a>
+          <button class="button callback footer-contacts__button">Заказать звонок</button>
+        </div>
+        <!-- /.footer-contacts -->
+      </div>
+      <!-- /.footer-block -->
+      <div class="footer-info">
+        <div class="footer-info__author">
+          <span class="footer-info__text">© Decorepoxy 2019г. Все права защищены.</span>
+          <span>Разработчик сайта: <a href="https://www.instagram.com/sergeev.site/" target="_blank" class="footer-info__link">Андрей Сергеев</a></span>
+        </div>
+        <span><a href="#" target="_blank" class="footer-info__link">Политика конфиденциальности</a></span>
+      </div>
+      <!-- /.footer-info -->
+    </div>
+    <!-- /.container -->
+
+  </footer>
+  <!-- Подключение скриптов -->
+  <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
+  <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

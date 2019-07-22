@@ -1,0 +1,61 @@
+.advantages
+  background-color: $main-color
+  &-block
+    display: flex
+    flex-direction: column
+  &__title
+    color: $white
+.advantage
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  margin-left: 130px
+  &-wrap
+    display: flex
+    flex-direction: column
+    margin-bottom: 30px
+  &__item
+    display: flex
+    align-items: center
+    min-width: 400px
+    margin-top: 50px
+  &__image
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 180px
+    height: 180px
+    background-color: $second-color
+    border-radius: 50%
+    img
+      max-width: 90px
+      margin-top: 30px
+  &__number
+    position: absolute
+    transform: translate(-50px, -60px)
+    +bold
+    color: $main-color
+    font-size: 70px
+  &__title
+    display: block
+    width: 120px
+    margin-left: 20px
+    +reg
+    font-size: 18px
+    text-transform: uppercase
+    color: $bg-color
+  &__text
+    position: relative
+    margin-top: 30px
+    font-size: 14px
+    line-height: 24px
+    color: $white
+    width: 310px
+    &:before
+      content: ''
+      position: absolute
+      left: -10px
+      width: 3px
+      height: 100%
+      background-color: $second-color

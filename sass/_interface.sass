@@ -1,0 +1,61 @@
+*
+  box-sizing: border-box
+body
+  margin: 0
+  padding: 0
+  font-family: 'Open Sans', sans-serif
+img
+  max-width: 100%
+a
+  text-decoration: none
+  outline: none
+.container
+  width: 100%
+  max-width: 1170px
+  margin: 0 auto
+.button
+  padding: 12px 20px
+  +reg
+  font-size: 14px
+  color: $main-color
+  background-color: $btn-color
+  border: 1px solid rgba(0, 0, 0, 0)
+  border-radius: 30px
+  outline: none
+  transition: 0.2s
+  &:hover
+    cursor: pointer
+    background-color: lighten($main-color, 20%)
+    color: $white
+.section
+  padding-top: 80px
+  padding-bottom: 80px
+  &-title
+    margin: 0
+    margin-bottom: 70px
+    text-transform: uppercase
+    +bold
+    font-size: 24px
+    color: $main-color
+    text-align: center
+.input
+  margin-top: 12px
+  margin-bottom: 25px
+  padding-left: 5px
+  width: 300px
+  height: 40px
+  border: 2px solid $second-color
+  border-radius: 5px
+  font-size: 13px
+  +reg
+  background-color: $main-color
+  color: grey
+  outline: none
+  transition: 0.2s
+  &:focus
+    box-shadow: 0px 0px 3px $bg-color
+    border: 2px solid lighten($bg-color, 10%)
+    color: $white
+  &:focus::placeholder
+    transition: 0.4s
+    transform: translateY(-50px)

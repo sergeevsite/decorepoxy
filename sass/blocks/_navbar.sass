@@ -1,0 +1,76 @@
+.navbar
+  background-color: $white
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 10
+  border-bottom: 2px solid $second-color
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 0
+  &__logo
+    width: 130px
+    transition: 0.2s
+    &_active
+      width: 80px
+  &__list 
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    min-width: 600px
+    list-style: none
+  &__text
+    position: relative
+    +reg
+    font-size: 15px
+    color: $main-color
+    text-decoration: none
+    &:before
+      content: ''
+      bottom: 0
+      left: 0
+      position: absolute
+      width: 0
+      height: 2px
+      background-color: $bg-color
+      transition: 0.5s
+    &:after
+      content: ''
+      bottom: 0
+      right: 0
+      position: absolute
+      width: 0%
+      height: 2px
+      background-color: $bg-color
+      transition: 1s
+    &:hover:before
+      width: 100%
+    &:hover:after
+      width: 100%
+  &__info
+    display: flex
+    flex-direction: column
+    img
+      width: 20px
+  &__phone
+    display: flex
+    align-items: center
+    justify-content: space-around
+    +bold
+    text-decoration: none
+    color: $main-color
+  &__button
+    padding: 12px 30px
+    margin-top: 20px
+    font-size: 13px
+    border: 2px solid $main-color
+    background-color: $white
+    &_active
+      display: none
+    &:hover
+      border: 2px solid $second-color
+      background-color: $white
+      color: $second-color
+
