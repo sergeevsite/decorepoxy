@@ -3,12 +3,10 @@
     &__link
       outline: none
       text-decoration: none
-
     &__item
       display: flex
       flex-direction: column
       text-align: center
-      padding: 0 10px
       &:hover
         .works-slider__text
           transition: 0.2s
@@ -28,13 +26,21 @@
     position: relative
     &__left
       position: absolute
-      left: -70px
-      bottom: 160px
-      width: 50px
+      left: -10px
+      bottom: 170px
+      z-index: 1
+      background-color: white
+      padding-top: 5px
+      padding-bottom: 3px
+      width: 40px
       cursor: pointer
     &__right
       position: absolute
-      right: -70px
-      bottom: 160px
-      width: 50px
+      right: -10px
+      bottom: 170px
+      z-index: 1
+      background-color: white
+      padding-top: 5px
+      padding-bottom: 3px
+      width: 40px
       cursor: pointer

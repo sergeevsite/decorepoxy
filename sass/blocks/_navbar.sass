@@ -10,11 +10,6 @@
     justify-content: space-between
     align-items: center
     padding: 10px 0
-  &__logo
-    width: 130px
-    transition: 0.2s
-    &_active
-      width: 80px
   &__list 
     display: flex 
     justify-content: space-between
@@ -73,4 +68,63 @@
       border: 2px solid $second-color
       background-color: $white
       color: $second-color
-
+// Мобильное меню
+.menu
+  &-mobile
+    display: none
+    &__list
+      position: absolute
+      top: 0
+      left: 0
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 100%
+      height: 60vh
+      transform: translateY(-450px)
+      background-color: $white
+      list-style: none
+      visibility: hidden
+      opacity: 0.9
+      transition: 0.3s cubic-bezier(0.51, 0.01, 0.24, 0.89)
+      z-index: -1
+      &_active
+        transform: translateY(102px)
+        visibility: visible
+    &__item
+      margin-bottom: 35px
+      &:nth-child(1)
+        margin-top: 30px
+    &__text
+      +reg
+      font-size: 22px
+      color: $main-color
+      text-decoration: none 
+    &__burger
+      width: 30px
+      height: 5px
+      margin-left: 80px
+      background-color: $main-color
+      transition: 0.2s
+      &:before
+        content: ''
+        display: block
+        width: 30px
+        height: 5px
+        background-color: $main-color
+        transform: translateY(-10px)
+        transition: 0.2s
+      &:after
+        content: ''
+        display: block
+        width: 30px
+        height: 5px
+        background-color: $main-color
+        transform: translateY(5px)
+        transition: 0.2s
+      &_active
+        transform: rotate(45deg)
+        &:before
+          transform: rotate(90deg)
+        &:after
+          opacity: 0

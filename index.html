@@ -32,10 +32,25 @@
               <a href="#" class="navbar__text">Контакты</a></li>
           </ul>
         </div>
+        <!-- Меню mobile-->
+        
+        <div class="menu-mobile">
+          <div id="menu-btn" class="menu-mobile__burger"></div>
+          <ul id="menu-list" class="menu-mobile__list">
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__text">Каталог изделий</a></li>
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__text">О компании</a></li>
+            <li class="menu-mobile__item">
+                <a href="#" class="menu-mobile__text">Новости</a></li>
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__text">Контакты</a></li>
+          </ul>
+        </div>
         <!-- Контакты с кнопкой -->
-        <div class="info navbar__info">
+        <div id="navbar-info" class="info navbar__info">
           <a href="tel:+78432495388" class="navbar__phone"><img src="./img/navbar/phone.svg" alt="Телефон">+7 (843) 249-53-88</a>
-          <button class="button callback navbar__button">Заказать звонок</button>
+          <button id="navbar-btn" class="button callback navbar__button">Заказать звонок</button>
         </div>
       </div>
     </div>
@@ -253,10 +268,10 @@
           </div>
           <!-- /.slider -->
           <div class="works-controls">
-            <div id="worksControlsLeft" href="#!" class="works-controls__left">
+            <div id="worksControlsLeft" class="works-controls__left">
               <img src="./img/works/left-arrow.svg" alt="">
             </div>
-            <div id="worksControlsRight" href="#!" class="works-controls__right">
+            <div id="worksControlsRight" class="works-controls__right">
               <img src="./img/works/right-arrow.svg" alt="">
             </div>
           </div>
@@ -393,5 +408,6 @@
   <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
   <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/navbar.js"></script>
 </body>
 </html>
