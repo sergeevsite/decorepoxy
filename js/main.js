@@ -45,7 +45,7 @@ $(document).ready(function(){
         $('#navbar-btn').show();
     }
   });
-  
+
   // Настройки navbar 
 $(window).resize(function() {
   width = $(window).width();
