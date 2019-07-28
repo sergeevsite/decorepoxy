@@ -79,12 +79,12 @@
       align-items: center
       width: 100%
       height: 100vh
-      transform: translateY(-450px)
+      transform: translateY(-850px)
       background-color: $white
       list-style: none
       visibility: hidden
-      opacity: 0.9
-      transition: 0.2s cubic-bezier(0.51, 0.01, 0.24, 0.89)
+      opacity: 0.97
+      transition: 0.2s 
       z-index: -10
       &_active
         transform: translateY(75px)
@@ -94,18 +94,22 @@
       &:nth-child(1)
         margin-top: 30px
       &:nth-child(4)
-        margin-bottom: 80px
+        margin-bottom: 40px
       &:nth-child(5), &:nth-child(6), &:nth-child(7)
         margin-bottom: 20px
     &__text
       +reg
       font-size: 22px
       color: $main-color
-      text-decoration: none 
+      text-decoration: none
+    &__line
+      height: 1px
+      width: 100%
+      background-color: $second-color
+      margin-bottom: 20px
     &__burger
       width: 30px
       height: 5px
-      margin-left: 80px
       background-color: $main-color
       transition: 0.2s
       &:before
@@ -132,6 +136,6 @@
           opacity: 0
     &__phone, &__whatsapp
       margin-top: 10px
-      font-size: 16px
+      font-size: 18px
     &__email
-      font-size: 15px
+      font-size: 16px
