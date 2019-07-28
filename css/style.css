@@ -1499,15 +1499,33 @@ a {
   .card {
     margin-bottom: 60px;
   }
+  .card:hover img {
+    opacity: 1;
+  }
+  .card:hover .card__description {
+    -webkit-transform: translateY(220px);
+            transform: translateY(220px);
+  }
   .card:nth-child(6) {
     margin-bottom: 10px;
   }
+  .card__image {
+    margin-bottom: 10px;
+  }
+  .card__title {
+    font-size: 18px;
+  }
   .card__line {
-    width: 90%;
+    display: none;
+  }
+  .card__number {
+    display: none;
   }
   .card__description {
-    -webkit-transform: translateY(290px);
-            transform: translateY(290px);
+    font-size: 14px;
+    -webkit-transform: translateY(220px);
+            transform: translateY(220px);
+    padding-top: 7px;
   }
 }
 

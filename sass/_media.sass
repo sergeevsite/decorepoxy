@@ -45,12 +45,25 @@
 @media (max-width: 576px)
   .card
     margin-bottom: 60px
+    &:hover
+      img
+        opacity: 1
+      .card__description
+        transform: translateY(220px)
     &:nth-child(6)
       margin-bottom: 10px
+    &__image
+      margin-bottom: 10px
+    &__title
+      font-size: 18px
     &__line
-      width: 90%
+      display: none
+    &__number
+      display: none
     &__description
-      transform: translateY(290px)
+      font-size: 14px
+      transform: translateY(220px)
+      padding-top: 7px
 // works
 @media (max-width: 1200px)
   .works
