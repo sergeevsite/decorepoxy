@@ -35,18 +35,29 @@ $(document).ready(function(){
   })
 
 // Скрытие кнопки при скролле
-  $(window).scroll(function(){
-    scroll = $(window).scrollTop();
-    if (scroll > 500) {
-        $('.logo').addClass('logo_active');
-        $('#navbar-btn').hide();
-    } else {
-        $('.logo').removeClass('logo_active');
-        $('#navbar-btn').show();
-    }
-  });
+  // $(window).scroll(function(){
+  //   scroll = $(window).scrollTop();
+  //   if (scroll > 500) {
+  //       $('.logo').addClass('logo_active');
+  //       $('#navbar-btn').hide();
+  //   } else {
+  //       $('.logo').removeClass('logo_active');
+  //       $('#navbar-btn').show();
+  //   }
+  // });
 
   // Настройки navbar 
+$(window).scroll(function(){
+  scroll = $(window).scrollTop();
+  if (scroll > 500) {
+      $('.logo').addClass('logo_active');
+      $('#navbar-btn').hide();
+  } else {
+      $('.logo').removeClass('logo_active');
+      $('#navbar-btn').show();
+  }
+});
+
 let flag = false
 $(window).resize(function() {
   width = $(window).width();

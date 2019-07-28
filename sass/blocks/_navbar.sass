@@ -54,8 +54,6 @@
     +bold
     text-decoration: none
     color: $main-color
-    img
-      width: 20px
   &__button
     padding: 12px 30px
     margin-top: 20px
@@ -95,6 +93,10 @@
       margin-bottom: 35px
       &:nth-child(1)
         margin-top: 30px
+      &:nth-child(4)
+        margin-bottom: 80px
+      &:nth-child(5), &:nth-child(6), &:nth-child(7)
+        margin-bottom: 20px
     &__text
       +reg
       font-size: 22px
@@ -128,6 +130,8 @@
           transform: rotate(90deg)
         &:after
           opacity: 0
-    &__phone
-      margin-top: 20px
-      font-size: 20px
+    &__phone, &__whatsapp
+      margin-top: 10px
+      font-size: 16px
+    &__email
+      font-size: 15px

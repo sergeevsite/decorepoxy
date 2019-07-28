@@ -504,6 +504,16 @@ a {
           transform: translateY(-50px);
 }
 
+.contact {
+  color: #262222;
+}
+
+.contact img {
+  width: 20px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
 .navbar {
   background-color: #ffffff;
   position: fixed;
@@ -606,10 +616,6 @@ a {
   color: #262222;
 }
 
-.navbar__phone img {
-  width: 20px;
-}
-
 .navbar__button {
   padding: 12px 30px;
   margin-top: 20px;
@@ -673,6 +679,14 @@ a {
   margin-top: 30px;
 }
 
+.menu-mobile__item:nth-child(4) {
+  margin-bottom: 80px;
+}
+
+.menu-mobile__item:nth-child(5), .menu-mobile__item:nth-child(6), .menu-mobile__item:nth-child(7) {
+  margin-bottom: 20px;
+}
+
 .menu-mobile__text {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -728,9 +742,13 @@ a {
   opacity: 0;
 }
 
-.menu-mobile__phone {
-  margin-top: 20px;
-  font-size: 20px;
+.menu-mobile__phone, .menu-mobile__whatsapp {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.menu-mobile__email {
+  font-size: 15px;
 }
 
 .hero {
@@ -1357,12 +1375,6 @@ a {
   text-decoration: underline;
 }
 
-.footer-contacts img {
-  width: 20px;
-  margin-right: 7px;
-  vertical-align: middle;
-}
-
 .footer-contacts a {
   color: #e8b652;
 }
@@ -1422,7 +1434,7 @@ a {
   .navbar__menu {
     display: none;
   }
-  .navbar__button {
+  .navbar__info {
     display: none;
   }
   .menu-mobile {
@@ -1432,6 +1444,21 @@ a {
   }
   .menu-mobile__logo {
     width: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    margin-top: 75px;
+  }
+  .hero-text__title {
+    font-size: 28px;
+  }
+  .hero-button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1449,6 +1476,27 @@ a {
     background-color: white;
     padding-top: 5px;
     padding-bottom: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .advantage {
+    margin-left: 0;
+  }
+  .advantage__item {
+    min-width: 320px;
+  }
+  .advantage__title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */

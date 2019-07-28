@@ -8,12 +8,21 @@
       width: 90px
     &__menu
       display: none
-    &__button
+    &__info
       display: none
   .menu-mobile
     display: flex
     &__logo
       width: 80px
+// hero
+@media (max-width: 576px)
+  .hero
+    margin-top: 75px
+    &-text
+      &__title
+        font-size: 28px
+    &-button
+      flex-direction: column
 // works
 @media (max-width: 1200px)
   .works
@@ -30,3 +39,16 @@
         background-color: white
         padding-top: 5px
         padding-bottom: 3px
+// advantages
+@media (max-width: 576px)
+  .advantage
+    margin-left: 0
+    &__item
+      min-width: 320px
+    &__title
+      font-size: 14px
+// footer
+@media (max-width: 576px)
+  .footer
+    &-block
+      flex-direction: column
