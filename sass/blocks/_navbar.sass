@@ -47,8 +47,6 @@
   &__info
     display: flex
     flex-direction: column
-    img
-      width: 20px
   &__phone
     display: flex
     align-items: center
@@ -56,6 +54,8 @@
     +bold
     text-decoration: none
     color: $main-color
+    img
+      width: 20px
   &__button
     padding: 12px 30px
     margin-top: 20px
@@ -86,7 +86,7 @@
       list-style: none
       visibility: hidden
       opacity: 0.9
-      transition: 0.3s cubic-bezier(0.51, 0.01, 0.24, 0.89)
+      transition: 0.2s cubic-bezier(0.51, 0.01, 0.24, 0.89)
       z-index: -10
       &_active
         transform: translateY(75px)
@@ -128,3 +128,6 @@
           transform: rotate(90deg)
         &:after
           opacity: 0
+    &__phone
+      margin-top: 20px
+      font-size: 20px

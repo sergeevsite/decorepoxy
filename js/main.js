@@ -34,7 +34,7 @@ $(document).ready(function(){
     worksSlider.trigger('next.owl.carousel');
   })
 
-
+// Скрытие кнопки при скролле
   $(window).scroll(function(){
     scroll = $(window).scrollTop();
     if (scroll > 500) {
@@ -47,21 +47,25 @@ $(document).ready(function(){
   });
 
   // Настройки navbar 
+let flag = false
 $(window).resize(function() {
   width = $(window).width();
-  if (width < 991) {
-    $('#navbar-btn').addClass('navbar__button_active');
+  if (width < 991 && !flag) {
+    $('.navbar__button').remove();
+    flag = true
   }
-  else {
-    $('#navbar-btn').removeClass('navbar__button_active');
+  else if (width >= 991 && flag) {
+    newdiv = $("<button id=\"navbar-btn\" class=\"button callback navbar__button\">Заказать звонок<\/button>");
+    $("#navbar-info").append(newdiv);
+    flag = false
   }
 });
 
 // Появление меню при клике на экранах меньше 991px
+
 $('#menu-btn').click(function(){
   $('#menu-btn').toggleClass('menu-mobile__burger_active');
   $('#menu-list').toggleClass('menu-mobile__list_active');
 });
-
 
 });
