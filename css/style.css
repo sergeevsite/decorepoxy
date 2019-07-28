@@ -1456,7 +1456,7 @@ a {
 @media (max-width: 576px) {
   .hero {
     margin-top: 75px;
-    height: 470px;
+    height: 490px;
   }
   .hero-text__title {
     margin-top: 60px;
@@ -1464,7 +1464,7 @@ a {
   }
   .hero-text__subtitle {
     margin-bottom: 80px;
-    font-size: 15px;
+    font-size: 16px;
   }
   .hero-button {
     -webkit-box-orient: vertical;
