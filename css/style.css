@@ -1496,7 +1496,7 @@ a {
 
 @media (max-width: 576px) {
   .card {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .card:hover img {
     opacity: 1;
@@ -1518,9 +1518,10 @@ a {
     display: none;
   }
   .card__description {
-    padding-top: 7px;
-    -webkit-transform: translateY(250px);
-            transform: translateY(250px);
+    position: relative;
+    padding-top: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -1549,7 +1550,7 @@ a {
     min-width: 320px;
   }
   .advantage__title {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
