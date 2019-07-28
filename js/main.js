@@ -11,6 +11,14 @@ $(document).ready(function(){
     nav: false,
     margin: 30,
     responsive: {
+      320 : {
+        items: 1
+
+      },
+      576 : {
+        items: 2
+
+      },
       768 : {
         items: 2
 
@@ -33,18 +41,6 @@ $(document).ready(function(){
   $('#worksControlsRight').click(function() {
     worksSlider.trigger('next.owl.carousel');
   })
-
-// Скрытие кнопки при скролле
-  // $(window).scroll(function(){
-  //   scroll = $(window).scrollTop();
-  //   if (scroll > 500) {
-  //       $('.logo').addClass('logo_active');
-  //       $('#navbar-btn').hide();
-  //   } else {
-  //       $('.logo').removeClass('logo_active');
-  //       $('#navbar-btn').show();
-  //   }
-  // });
 
   // Настройки navbar 
 $(window).scroll(function(){
