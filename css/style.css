@@ -856,8 +856,7 @@ a {
 }
 
 .card:hover .card__description {
-  -webkit-transform: translateY(290px);
-          transform: translateY(290px);
+  margin-top: -20px;
   padding-bottom: 20px;
 }
 
@@ -1503,8 +1502,8 @@ a {
     opacity: 1;
   }
   .card:hover .card__description {
-    -webkit-transform: translateY(220px);
-            transform: translateY(220px);
+    margin-top: 0;
+    padding-bottom: 0;
   }
   .card:nth-child(6) {
     margin-bottom: 10px;
@@ -1519,13 +1518,13 @@ a {
     display: none;
   }
   .card__number {
-    display: none;
+    visibility: hidden;
   }
   .card__description {
-    font-size: 14px;
-    -webkit-transform: translateY(220px);
-            transform: translateY(220px);
     padding-top: 7px;
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+    font-size: 14px;
   }
 }
 
