@@ -19,12 +19,21 @@
       display: none
   .menu-mobile
     display: flex
+    &__phone
+      display: block
+@media (max-width: 576px)
+  .navbar
     &__logo
-      width: 80px
+      width: 70px
+  .menu-mobile
+    &__phone
+      font-size: 14px
+      img
+        width: 18px
 // hero
 @media (max-width: 576px)
   .hero
-    margin-top: 75px
+    margin-top: 63px
     height: 490px
     &-text
       &__title

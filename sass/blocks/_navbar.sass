@@ -66,6 +66,7 @@
       border: 2px solid $second-color
       background-color: $white
       color: $second-color
+
 // Мобильное меню
 .menu
   &-mobile
@@ -134,8 +135,12 @@
           transform: rotate(90deg)
         &:after
           opacity: 0
-    &__phone, &__whatsapp
+    &__whatsapp
       margin-top: 10px
       font-size: 18px
     &__email
       font-size: 16px
+    &__phone
+      display: none
+      +bold
+      font-size: 18px

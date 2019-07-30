@@ -752,7 +752,7 @@ a {
   opacity: 0;
 }
 
-.menu-mobile__phone, .menu-mobile__whatsapp {
+.menu-mobile__whatsapp {
   margin-top: 10px;
   font-size: 18px;
 }
@@ -761,14 +761,21 @@ a {
   font-size: 16px;
 }
 
+.menu-mobile__phone {
+  display: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .hero {
   position: relative;
   padding-top: 10px;
-  margin-top: 100px;
+  margin-top: 75px;
   background: url("../img/hero/bg-hero.jpg");
   background-size: cover;
   background-position-y: center;
-  height: 500px;
+  height: 515px;
 }
 
 .hero:after {
@@ -1471,14 +1478,26 @@ a {
     display: -ms-flexbox;
     display: flex;
   }
-  .menu-mobile__logo {
-    width: 80px;
+  .menu-mobile__phone {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar__logo {
+    width: 70px;
+  }
+  .menu-mobile__phone {
+    font-size: 14px;
+  }
+  .menu-mobile__phone img {
+    width: 18px;
   }
 }
 
 @media (max-width: 576px) {
   .hero {
-    margin-top: 75px;
+    margin-top: 63px;
     height: 490px;
   }
   .hero-text__title {
