@@ -657,21 +657,22 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 100vh;
-  -webkit-transform: translateY(-850px);
-          transform: translateY(-850px);
+  height: 0vh;
+  -webkit-transform: translateY(75px);
+          transform: translateY(75px);
   background-color: #ffffff;
   list-style: none;
-  visibility: hidden;
-  opacity: 0.97;
+  opacity: 0.96;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  visibility: hidden;
   z-index: -10;
 }
 
 .menu-mobile__list_active {
   -webkit-transform: translateY(75px);
           transform: translateY(75px);
+  height: 100vh;
   visibility: visible;
 }
 
@@ -1493,6 +1494,10 @@ a {
   }
   .menu-mobile__phone img {
     width: 19px;
+  }
+  .menu-mobile__list {
+    -webkit-transform: translateY(64px);
+            transform: translateY(64px);
   }
   .menu-mobile__list_active {
     -webkit-transform: translateY(64px);

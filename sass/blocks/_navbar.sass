@@ -79,16 +79,17 @@
       flex-direction: column
       align-items: center
       width: 100%
-      height: 100vh
-      transform: translateY(-850px)
+      height: 0vh
+      transform: translateY(75px)
       background-color: $white
       list-style: none
+      opacity: 0.96
+      transition: 0.2s
       visibility: hidden
-      opacity: 0.97
-      transition: 0.2s 
       z-index: -10
       &_active
         transform: translateY(75px)
+        height: 100vh
         visibility: visible
     &__item
       margin-bottom: 35px
