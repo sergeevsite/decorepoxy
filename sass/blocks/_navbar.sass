@@ -84,7 +84,7 @@
       background-color: $white
       list-style: none
       opacity: 0.96
-      transition: 0.2s
+      transition: 0.3s
       visibility: hidden
       z-index: -10
       &_active
@@ -92,13 +92,17 @@
         height: 100vh
         visibility: visible
     &__item
+      transform: translateX(-700px)
       margin-bottom: 35px
+      transition: 0.1s
       &:nth-child(1)
         margin-top: 30px
       &:nth-child(4)
         margin-bottom: 40px
       &:nth-child(5), &:nth-child(6), &:nth-child(7)
         margin-bottom: 20px
+      &_active
+        transform: translateX(0px)
     &__text
       +reg
       font-size: 22px

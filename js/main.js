@@ -73,6 +73,7 @@ $(window).resize(function() {
 $('#menu-btn').click(function(){
   $('#menu-btn').toggleClass('menu-mobile__burger_active');
   $('#menu-list').toggleClass('menu-mobile__list_active');
+  $('.menu-mobile__item').toggleClass('menu-mobile__item_active');
 });
 
 });

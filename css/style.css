@@ -663,8 +663,8 @@ a {
   background-color: #ffffff;
   list-style: none;
   opacity: 0.96;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   visibility: hidden;
   z-index: -10;
 }
@@ -677,7 +677,11 @@ a {
 }
 
 .menu-mobile__item {
+  -webkit-transform: translateX(-700px);
+          transform: translateX(-700px);
   margin-bottom: 35px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .menu-mobile__item:nth-child(1) {
@@ -690,6 +694,11 @@ a {
 
 .menu-mobile__item:nth-child(5), .menu-mobile__item:nth-child(6), .menu-mobile__item:nth-child(7) {
   margin-bottom: 20px;
+}
+
+.menu-mobile__item_active {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
 .menu-mobile__text {
