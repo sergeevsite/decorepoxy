@@ -670,8 +670,8 @@ a {
 }
 
 .menu-mobile__list_active {
-  -webkit-transform: translateY(62px);
-          transform: translateY(62px);
+  -webkit-transform: translateY(75px);
+          transform: translateY(75px);
   visibility: visible;
 }
 
@@ -1493,6 +1493,10 @@ a {
   }
   .menu-mobile__phone img {
     width: 19px;
+  }
+  .menu-mobile__list_active {
+    -webkit-transform: translateY(64px);
+            transform: translateY(64px);
   }
 }
 
