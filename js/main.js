@@ -77,7 +77,6 @@ $('#menu-btn').click(function(){
     
     if($('.menu-mobile__burger').hasClass('menu-mobile__burger_active')) {
       $('html, body').css('overflow', 'hidden');
-      $('html, body').css('-webkit-overflow-scrolling', 'touch');
     } else {
       $('html, body').css('overflow', 'visible');
     }

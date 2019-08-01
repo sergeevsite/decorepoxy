@@ -389,6 +389,7 @@ template {
 }
 
 body {
+  position: relative;
   font-family: 'Open Sans', sans-serif;
 }
 
