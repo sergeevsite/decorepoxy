@@ -71,9 +71,16 @@ $(window).resize(function() {
 // Появление меню при клике на экранах меньше 991px
 
 $('#menu-btn').click(function(){
-  $('#menu-btn').toggleClass('menu-mobile__burger_active');
-  $('#menu-list').toggleClass('menu-mobile__list_active');
-  $('.menu-mobile__item').toggleClass('menu-mobile__item_active');
+    $('#menu-btn').toggleClass('menu-mobile__burger_active');
+    $('#menu-list').toggleClass('menu-mobile__list_active');
+    $('.menu-mobile__item').toggleClass('menu-mobile__item_active');
+    
+    if($('.menu-mobile__burger').hasClass('menu-mobile__burger_active')) {
+      $('body').css('overflow', 'hidden');
+    } else {
+      $('body').css('overflow', 'visible');
+    }
 });
 
 });
+
