@@ -76,9 +76,9 @@ $('#menu-btn').click(function(){
     $('.menu-mobile__item').toggleClass('menu-mobile__item_active');
     
     if($('.menu-mobile__burger').hasClass('menu-mobile__burger_active')) {
-      $('body').css('overflow', 'hidden');
+      $('html, body').css('overflow', 'hidden');
     } else {
-      $('body').css('overflow', 'visible');
+      $('html, body').css('overflow', 'visible');
     }
 });
 
