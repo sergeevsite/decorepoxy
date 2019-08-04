@@ -389,7 +389,6 @@ template {
 }
 
 body {
-  position: relative;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -1312,7 +1311,7 @@ a {
 }
 
 .footer__logo {
-  width: 100px;
+  width: 160px;
 }
 
 .footer-links {
@@ -1630,6 +1629,9 @@ a {
   .advantage {
     margin-left: 0;
   }
+  .advantages__title {
+    margin-bottom: 10px;
+  }
   .advantage-wrap {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1686,6 +1688,9 @@ a {
   .footer__logo {
     display: none;
   }
+  .footer-links {
+    margin-bottom: 20px;
+  }
   .footer-links__list {
     margin-right: 20px;
   }
@@ -1694,6 +1699,13 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer-info__author {
+    margin-bottom: 5px;
+  }
+  .footer-social {
+    margin-right: 10px;
+    margin-bottom: 15px;
   }
   .footer-social__qrcode {
     display: none;
