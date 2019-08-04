@@ -1673,6 +1673,29 @@ a {
 }
 
 @media (max-width: 576px) {
+  .order__title {
+    margin-bottom: 20px;
+  }
+  .order__subtitle {
+    margin-bottom: 0;
+  }
+  .input:focus::-webkit-input-placeholder {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  .input:focus:-ms-input-placeholder {
+    transform: translateY(0px);
+  }
+  .input:focus::-ms-input-placeholder {
+    transform: translateY(0px);
+  }
+  .input:focus::placeholder {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@media (max-width: 576px) {
   .footer {
     padding-top: 40px;
   }

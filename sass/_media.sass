@@ -142,6 +142,16 @@
       text-align: center
       &:before
         display: none
+// order
+@media (max-width: 576px)
+  .order
+    &__title
+      margin-bottom: 20px
+    &__subtitle
+      margin-bottom: 0
+  .input
+    &:focus::placeholder
+      transform: translateY(0px)
 // footer
 @media (max-width: 576px)
   .footer
