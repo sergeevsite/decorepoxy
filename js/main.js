@@ -42,6 +42,13 @@ $(document).ready(function(){
     worksSlider.trigger('next.owl.carousel');
   })
 
+// Подключение и настройка плагина для стилизации Select
+  $(function() {
+  
+    $('.form-select').styler();
+  
+  });
+
   // Настройки navbar 
 $(window).scroll(function(){
   scroll = $(window).scrollTop();

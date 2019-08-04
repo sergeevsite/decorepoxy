@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Decor Epoxy</title>
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./libs/jqueryFormstylerTheme/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.theme.default.min.css">
@@ -322,10 +323,9 @@
                 <input type="text" class="input form__hight" placeholder="Высота" maxlength="3">
               </div>
               <span class="form__label">Порода дерева</span>
-              <div class="form__help"></div>
               <div class="form-wood">
                 <div class="form__help">?</div>
-                <select class="input form__wood" name="wood" id="">
+                <select class="form-select form__wood" name="wood" id="text">
                   <option value="Орех">Орех</option>
                   <option value="Дуб">Дуб</option>
                   <option value="Клен">Клен</option>
@@ -335,7 +335,7 @@
               <span class="form__label">Цвет эпоксидной смолы</span>
               <div class="form-color">
                 <div class="form__help">?</div>
-                <select class="input form__color" name="color" id="">
+                <select class="form-select form__color" name="color" id="">
                   <option value="Синий">Синий</option>
                   <option value="Голубой">Голубой</option>
                   <option value="Красный">Красный</option>
@@ -422,7 +422,8 @@
   </footer>
   <!-- Подключение скриптов -->
   <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
-  <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
+  <script src="./libs/jqueryFormstylerTheme/jquery.formstyler.min.js"></script>
 </body>
 </html>
