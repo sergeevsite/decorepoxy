@@ -2063,7 +2063,17 @@ a {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
+  .sidebar {
+    margin-right: 10px;
+  }
+  .cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
   .catalog {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2098,6 +2108,13 @@ a {
     margin-bottom: 50px;
     min-width: 300px;
   }
+  .cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 576px) {
   .card {
     width: 100%;
   }
