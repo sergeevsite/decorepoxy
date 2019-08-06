@@ -2099,7 +2099,10 @@ a {
     min-width: 300px;
   }
   .card {
-    width: 310px;
+    width: 100%;
+  }
+  .card__image {
+    width: 100%;
   }
   .cards {
     -webkit-box-pack: center;
