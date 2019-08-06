@@ -1,6 +1,8 @@
 @media (max-width: 1200px)
   .container
     padding: 0 10px
+  .back-navbar
+    padding: 32px 0
 @media (max-width: 576px)
   .section
     padding-top: 30px
@@ -8,6 +10,8 @@
     &-title
       font-size: 22px
       margin-bottom: 50px
+  .back-navbar
+    padding: 32px 0
 // navbar
 @media (max-width: 992px)
   .navbar
@@ -46,7 +50,6 @@
 // hero
 @media (max-width: 576px)
   .hero
-    margin-top: 63px
     height: 490px
     &-text
       &__title
@@ -65,18 +68,17 @@
         margin-left: 0
 // catalog
 @media (max-width: 1058px)
-  .card
-    &s
-      justify-content: space-around
+  .categories
+    justify-content: space-around
 @media (max-width: 768px)
-  .card
+  .categories
     margin-bottom: 40px
-    &s
-      justify-content: center
+  .category
+    justify-content: center
     &:hover
       img
         opacity: 1
-      .card__description
+      .category__description
         margin-top: 0
         padding-bottom: 0
     &:nth-child(6)
@@ -97,7 +99,7 @@
       transform: translateY(0)
       font-size: 15px
 // works
-@media (max-width: 1200px)
+@media (max-width: 1260px)
   .works
     &-controls
       &__left
@@ -112,6 +114,10 @@
         background-color: white
         padding-top: 5px
         padding-bottom: 3px
+@media (max-width: 768px)
+  .works
+    &-controls
+      display: none
 // advantages
 @media (max-width: 576px)
   .advantage

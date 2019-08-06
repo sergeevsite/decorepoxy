@@ -20,7 +20,7 @@ $(document).ready(function(){
 
       },
       768 : {
-        items: 2
+        items: 3
 
       },
       992 : {
@@ -46,9 +46,8 @@ $(document).ready(function(){
   $(function() {
   
     $('.form-select').styler();
-  
+    
   });
-
   // Настройки navbar 
 $(window).scroll(function(){
   scroll = $(window).scrollTop();

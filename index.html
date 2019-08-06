@@ -18,49 +18,47 @@
       <div class="navbar-block">
         <!-- Логотип -->
         <div class="logo navbar__logo">
-         <a href="#"><img src="./img/navbar/logo.png" alt="Логотип"></a>
+         <a href="./index.html"><img src="./img/main/navbar/logo.png" alt="Логотип"></a>
         </div>
         
         <!-- Меню -->
         <div class="menu navbar__menu">
           <ul class="navbar__list">
+            <li class="navbar_active">
+              <a href="./index.html" class="navbar__text">Главная</a></li>
             <li class="navbar__item">
-              <a href="#" class="navbar__text">Каталог изделий</a></li>
+              <a href="./catalog.html" class="navbar__text">Каталог изделий</a></li>
             <li class="navbar__item">
-              <a href="#" class="navbar__text">О компании</a></li>
-            <li class="navbar__item">
-                <a href="#" class="navbar__text">Новости</a></li>
+              <a href="./about.html" class="navbar__text">О компании</a></li>
             <li class="navbar__item">
               <a href="#" class="navbar__text">Контакты</a></li>
           </ul>
         </div>
         <!-- Меню mobile-->
 
-          <a href="tel:+78432495388" class="contact menu-mobile__phone"><img src="./img/navbar/phone.svg" alt="Телефон">+7 (843) 249-53-88</a>
+          <a href="tel:+78432495388" class="contact menu-mobile__phone"><img src="./img/main/navbar/phone.svg" alt="Телефон">+7 (843) 249-53-88</a>
 
         <div class="menu-mobile">
           <div id="menu-btn" class="menu-mobile__burger"></div>
           <ul id="menu-list" class="menu-mobile__list">
             <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__text">Каталог изделий</a></li>
+              <a href="./index.html" class="menu-mobile__text">Главная</a></li>
             <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__text">О компании</a></li>
+              <a href="./catalog.html" class="menu-mobile__text">Каталог изделий</a></li>
             <li class="menu-mobile__item">
-                <a href="#" class="menu-mobile__text">Новости</a></li>
+              <a href="./about.html" class="menu-mobile__text">О компании</a></li>
             <li class="menu-mobile__item">
               <a href="#" class="menu-mobile__text">Контакты</a></li>
             <li class="menu-mobile__line"></li>
             <li class="menu-mobile__item">
-              </li>
+              <a href="https://wa.me/79274423768" class="contact menu-mobile__whatsapp"><img src="./img/main/navbar/whatsapp.svg" alt="whatsapp">+7 (927) 442-37-68</a></li>
             <li class="menu-mobile__item">
-              <a href="https://wa.me/79274423768" class="contact menu-mobile__whatsapp"><img src="./img/navbar/whatsapp.svg" alt="whatsapp">+7 (927) 442-37-68</a></li>
-            <li class="menu-mobile__item">
-              <a href="mailto:decorepoxy@mail.ru" class="contact menu-mobile__email"><img src="./img/navbar/envelope.svg" alt="Почта">decorepoxy@mail.ru</a></li>
+              <a href="mailto:decorepoxy@mail.ru" class="contact menu-mobile__email"><img src="./img/main/navbar/envelope.svg" alt="Почта">decorepoxy@mail.ru</a></li>
           </ul>
         </div>
         <!-- Контакты с кнопкой -->
         <div id="navbar-info" class="info navbar__info">
-          <a href="tel:+78432495388" class="contact navbar__phone"><img src="./img/navbar/phone.svg" alt="Телефон">+7 (843) 249-53-88</a>
+          <a href="tel:+78432495388" class="contact navbar__phone"><img src="./img/main/navbar/phone.svg" alt="Телефон">+7 (843) 249-53-88</a>
           <button id="navbar-btn" class="button callback navbar__button">Заказать звонок</button>
         </div>
       </div>
@@ -68,6 +66,7 @@
   </nav>
   
   <main>
+    <section class="back-navbar"></section>
     <section class="hero">
       <div class="container">
         <div class="hero-block">
@@ -79,7 +78,9 @@
           </div>
           <!-- /.hero-text -->
           <div class="hero-button">
-            <button class="button hero-button__catalog">Каталог изделий</button> 
+            <form action="./catalog.html">
+              <button class="button hero-button__catalog">Каталог изделий</button> 
+            </form>
             <!-- /.hero-button__catalog -->
             <button class="button hero-button__order">Оформить заказ</button> 
             <!-- /.hero-button__order -->
@@ -92,74 +93,74 @@
     </section>
     <!-- /.hero -->
 
-    <section class="section catalog">
+    <section class="section directory">
       <div class="container">
-        <div class="catalog-block">
-          <h2 class="section-title catalog__title">ЧТО МЫ ДЕЛАЕМ?</h2>
+        <div class="directory-block">
+          <h2 class="section-title directory__title">ЧТО МЫ ДЕЛАЕМ?</h2>
           <!-- /.section-title catalog__title -->
-          <div class="cards">
-            <div class="card catalog__card">
-              <a href="#" class="card_link"></a>
-              <img src="./img/catalog/table.jpg" alt="Столы" class="card__image">
-              <div class="card-wrap">
-                <span class="card__title">Столы</span>
-                <div class="card__line"></div>
+          <div class="categories">
+            <div class="category directory__category">
+              <a href="#" class="category_link"></a>
+              <img src="./img/main/catalog/table.jpg" alt="Столы" class="category__image">
+              <div class="category-wrap">
+                <span class="category__title">Столы</span>
+                <div class="category__line"></div>
               </div>
-              <span class="card__number">01</span>
-              <p class="card__description">Обеденные, письменные, журнальные</p>
+              <span class="category__number">01</span>
+              <p class="category__description">Обеденные, письменные, журнальные</p>
             </div>
-            <div class="card catalog__card">
-              <a href="#" class="card_link"></a>
-              <img src="./img/catalog/wood-desktop.jpg" alt="Столешницы из дерева" class="card__image">
-              <div class="card-wrap">
-                <div class="card__line"></div>
-                <span class="card__title">Столешницы из дерева</span>
+            <div class="category directory__category">
+              <a href="#" class="category_link"></a>
+              <img src="./img/main/catalog/wood-desktop.jpg" alt="Столешницы из дерева" class="category__image">
+              <div class="category-wrap">
+                <div class="category__line"></div>
+                <span class="category__title">Столешницы из дерева</span>
               </div>
-              <span class="card__number">02</span>
-              <p class="card__description">Барные столешницы для кухни</p>
+              <span class="category__number">02</span>
+              <p class="category__description">Барные столешницы для кухни</p>
             </div>
-            <div class="card catalog__card">
-              <a href="#" class="card_link"></a>
-              <img src="./img/catalog/storage-furniture.jpg" alt="Мебель для хранения" class="card__image">
-              <div class="card-wrap">
-                <div class="card__line"></div>
-                <span class="card__title">Мебель для хранения</span>
+            <div class="category directory__category">
+              <a href="#" class="category_link"></a>
+              <img src="./img/main/catalog/storage-furniture.jpg" alt="Мебель для хранения" class="category__image">
+              <div class="category-wrap">
+                <div class="category__line"></div>
+                <span class="category__title">Мебель для хранения</span>
               </div>
-              <span class="card__number">03</span>
-              <p class="card__description">Шкафы, тумбочки, полки</p>
+              <span class="category__number">03</span>
+              <p class="category__description">Шкафы, тумбочки, полки</p>
             </div>
-            <div class="card catalog__card">
-              <a href="#" class="card_link"></a>
-              <img src="./img/catalog/bed.jpg" alt="Кровати" class="card__image">
-              <div class="card-wrap">
-                <div class="card__line"></div>
-                <span class="card__title">Кровати</span>
+            <div class="category directory__category">
+              <a href="#" class="category_link"></a>
+              <img src="./img/main/catalog/bed.jpg" alt="Кровати" class="category__image">
+              <div class="category-wrap">
+                <div class="category__line"></div>
+                <span class="category__title">Кровати</span>
               </div>
-              <span class="card__number">04</span>
-              <p class="card__description">Кровати из дерева</p>
+              <span class="category__number">04</span>
+              <p class="category__description">Кровати из дерева</p>
             </div>
-            <div class="card catalog__card">
-              <a href="#" class="card_link"></a>
-              <img src="./img/catalog/couch.jpg" alt="Диваны" class="card__image">
-              <div class="card-wrap">
-                <div class="card__line"></div>
-                <span class="card__title">Диваны</span>
+            <div class="category directory__category">
+              <a href="#" class="category_link"></a>
+              <img src="./img/main/catalog/couch.jpg" alt="Диваны" class="category__image">
+              <div class="category-wrap">
+                <div class="category__line"></div>
+                <span class="category__title">Диваны</span>
               </div>
-              <span class="card__number">05</span>
-              <p class="card__description">Диваны для гостинной и кухни</p>
+              <span class="category__number">05</span>
+              <p class="category__description">Диваны для гостинной и кухни</p>
             </div>
-            <div class="card catalog__card">
-              <a href="#" class="card_link"></a>
-              <img src="./img/catalog/casket.jpg" alt="Шкатулки" class="card__image">
-              <div class="card-wrap">
-                <div class="card__line"></div>
-                <span class="card__title">Шкатулки</span>
+            <div class="category directory__category">
+              <a href="#" class="category_link"></a>
+              <img src="./img/main/catalog/casket.jpg" alt="Шкатулки" class="category__image">
+              <div class="category-wrap">
+                <div class="category__line"></div>
+                <span class="category__title">Шкатулки</span>
               </div>
-              <span class="card__number">06</span>
-              <p class="card__description">Шкатулки для хранения</p>
+              <span class="category__number">06</span>
+              <p class="category__description">Шкатулки для хранения</p>
             </div>
           </div>
-          <!-- /.cards -->
+          <!-- /.categorys -->
         </div>
         <!-- /.catalog-block -->
       </div>
@@ -177,7 +178,7 @@
               <div class="advantage__item">
                 <div class="advantage__image">
                   <span class="advantage__number">01</span>
-                  <img src="./img/advantages/tree-house.png" alt="">
+                  <img src="./img/main/advantages/tree-house.png" alt="">
                 </div>
                 <span class="advantage__title">Свойства Материала</span>
               </div>
@@ -187,7 +188,7 @@
               <div class="advantage__item">
                 <div class="advantage__image">
                   <span class="advantage__number">02</span>
-                  <img src="./img/advantages/table-water.png" alt="">
+                  <img src="./img/main/advantages/table-water.png" alt="">
                 </div>
                 <span class="advantage__title">Стойкость к влаге</span>
               </div>
@@ -197,7 +198,7 @@
               <div class="advantage__item">
                 <div class="advantage__image">
                   <span class="advantage__number">03</span>
-                  <img src="./img/advantages/cleanup.png" alt="">
+                  <img src="./img/main/advantages/cleanup.png" alt="">
                 </div>
                 <span class="advantage__title">Удобный уход</span>
               </div>
@@ -207,7 +208,7 @@
               <div class="advantage__item">
                 <div class="advantage__image">
                   <span class="advantage__number">04</span>
-                  <img src="./img/advantages/table-sun.png" alt="">
+                  <img src="./img/main/advantages/table-sun.png" alt="">
                 </div>
                 <span class="advantage__title">Стойкость к износу</span>
               </div>
@@ -217,7 +218,7 @@
               <div class="advantage__item">
                 <div class="advantage__image">
                   <span class="advantage__number">05</span>
-                  <img src="./img/advantages/field.png" alt="">
+                  <img src="./img/main/advantages/field.png" alt="">
                 </div>
                 <span class="advantage__title">Визуальное расширение пространства</span>
               </div>
@@ -239,7 +240,7 @@
           <div class="owl-carousel works-slider">
             <a href="#" class="works-slider__link">
               <div class="works-slider__item">
-                <img src="./img/works/product-1.jpg" alt="" class="works-slider__image">
+                <img src="./img/main/works/product-1.jpg" alt="" class="works-slider__image">
                 <span class="works-slider__text">Стол с заполнением камня</span>
                 <span class="works-slider__price">50 000 руб.</span>
               </div>
@@ -248,7 +249,7 @@
             <!-- /.works-slider__link -->
             <a href="#" class="works-slider__link">
               <div class="works-slider__item">
-                <img src="./img/works/product-2.jpg" alt="" class="works-slider__image">
+                <img src="./img/main/works/product-2.jpg" alt="" class="works-slider__image">
                 <span class="works-slider__text">Стол с заполнением камня</span>
                 <span class="works-slider__price">34 000 руб.</span>
               </div>
@@ -257,7 +258,7 @@
             <!-- /.works-slider__link -->
             <a href="#" class="works-slider__link">
               <div class="works-slider__item">
-                <img src="./img/works/product-3.jpg" alt="" class="works-slider__image">
+                <img src="./img/main/works/product-3.jpg" alt="" class="works-slider__image">
                 <span class="works-slider__text">Стол с заполнением камня</span>
                 <span class="works-slider__price">32 000 руб.</span>
               </div>
@@ -266,7 +267,7 @@
             <!-- /.works-slider__link -->
             <a href="#" class="works-slider__link">
               <div class="works-slider__item">
-                <img src="./img/works/product-1.jpg" alt="" class="works-slider__image">
+                <img src="./img/main/works/product-1.jpg" alt="" class="works-slider__image">
                 <span class="works-slider__text">Стол с заполнением камня</span>
                 <span class="works-slider__price">90 000 руб.</span>
               </div>
@@ -275,7 +276,7 @@
             <!-- /.works-slider__link -->
             <a href="#" class="works-slider__link">
               <div class="works-slider__item">
-                <img src="./img/works/product-2.jpg" alt="" class="works-slider__image">
+                <img src="./img/main/works/product-2.jpg" alt="" class="works-slider__image">
                 <span class="works-slider__text">Стол с заполнением камня</span>
                 <span class="works-slider__price">129 000 руб.</span>
               </div>
@@ -286,10 +287,10 @@
           <!-- /.slider -->
           <div class="works-controls">
             <div id="worksControlsLeft" class="works-controls__left">
-              <img src="./img/works/left-arrow.svg" alt="">
+              <img src="./img/main/works/left-arrow.svg" alt="">
             </div>
             <div id="worksControlsRight" class="works-controls__right">
-              <img src="./img/works/right-arrow.svg" alt="">
+              <img src="./img/main/works/right-arrow.svg" alt="">
             </div>
           </div>
         </div>
@@ -360,7 +361,7 @@
     <div class="container">
       <div class="footer-block">
         <div class="footer__logo">
-          <img src="./img/footer/logoWhite.png" alt="">
+          <img src="./img/main/footer/logoWhite.png" alt="">
         </div>
         <!-- /.footer-logo -->
         <div class="footer-links">
@@ -393,16 +394,16 @@
         <!-- /.footer-link -->
         <div class="footer-social">
           <div class="footer-social__instagram">
-            <img src="./img/footer/instagram.png" alt="Инстаграм">
+            <img src="./img/main/footer/instagram.png" alt="Инстаграм">
             <span><a href="https://www.instagram.com/decor_epoxy/" target="_blank">Мы в Instagram!</a></span>
           </div>
-          <img class="footer-social__qrcode" src="./img/footer/qrcode.png" alt="">
+          <img class="footer-social__qrcode" src="./img/main/footer/qrcode.png" alt="">
         </div>
         <!-- /.footer-social -->
         <div class="footer-contacts">
-          <a href="tel:+78432495388" class="contact footer-contacts__item phone"><img src="./img/footer/footerPhone.svg" alt="Телефон">+7 (843) 249-53-88</a>
-          <a href="https://wa.me/79274423768" class="contact footer-contacts__item whatsapp"><img src="./img/footer/whatsapp.svg" alt="whatsapp">+7 (927) 442-37-68</a>
-          <a href="mailto:decorepoxy@mail.ru" class="contact footer-contacts__item email"><img src="./img/footer/envelope.svg" alt="Почта">decorepoxy@mail.ru</a>
+          <a href="tel:+78432495388" class="contact footer-contacts__item phone"><img src="./img/main/footer/footerPhone.svg" alt="Телефон">+7 (843) 249-53-88</a>
+          <a href="https://wa.me/79274423768" class="contact footer-contacts__item whatsapp"><img src="./img/main/footer/whatsapp.svg" alt="whatsapp">+7 (927) 442-37-68</a>
+          <a href="mailto:decorepoxy@mail.ru" class="contact footer-contacts__item email"><img src="./img/main/footer/envelope.svg" alt="Почта">decorepoxy@mail.ru</a>
           <button class="button callback footer-contacts__button">Заказать звонок</button>
         </div>
         <!-- /.footer-contacts -->

@@ -71,3 +71,262 @@ a
     width: 20px
     margin-right: 7px
     vertical-align: middle
+.back-navbar
+  padding: 45px 0
+
+// Стили шапки
+.navbar
+  background-color: $white
+  position: fixed
+  width: 100%
+  top: 0
+  border-bottom: 2px solid $second-color
+  box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.2)
+  z-index: 10
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 0
+  &__list 
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    min-width: 600px
+    list-style: none
+  &__text
+    position: relative
+    +reg
+    font-size: 15px
+    color: $main-color
+    text-decoration: none
+    &:before
+      content: ''
+      bottom: 0
+      left: 0
+      position: absolute
+      width: 0
+      height: 2px
+      background-color: $second-color
+      transition: 0.5s
+    &:after
+      content: ''
+      bottom: 0
+      right: 0
+      position: absolute
+      width: 0%
+      height: 2px
+      background-color: $second-color
+      transition: 1s
+    &:hover:before
+      width: 100%
+    &:hover:after
+      width: 100%
+  &_active
+    &:after
+      content: ''
+      bottom: 0
+      right: 0
+      transform: translateY(1px)
+      display: block
+      width: 100%
+      height: 5px
+      border-radius: 0 0 5px 5px
+      background-color: $second-color
+  &__info
+    display: flex
+    flex-direction: column
+  &__phone
+    display: flex
+    align-items: center
+    justify-content: space-around
+    +bold
+    text-decoration: none
+    color: $main-color
+  &__button
+    padding: 12px 30px
+    margin-top: 20px
+    font-size: 13px
+    border: 2px solid $main-color
+    background-color: $white
+    &_active
+      display: none
+    &:hover
+      border: 2px solid $second-color
+      background-color: $white
+      color: $second-color
+
+// Мобильное меню
+.menu
+  &-mobile
+    display: none
+    &__list
+      position: absolute
+      top: 0
+      left: 0
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 100%
+      height: 0vh
+      transform: translateY(75px)
+      background-color: $white
+      list-style: none
+      opacity: 0.96
+      transition: 0.2s
+      visibility: hidden
+      z-index: -10
+      &_active
+        transform: translateY(75px)
+        height: 100vh
+        visibility: visible
+    &__item
+      transform: translateX(-700px)
+      margin-bottom: 35px
+      transition: 0.2s
+      &:nth-child(1)
+        margin-top: 30px
+      &:nth-child(4)
+        margin-bottom: 40px
+      &:nth-child(5), &:nth-child(6), &:nth-child(7)
+        margin-bottom: 20px
+      &_active
+        transform: translateX(0px)
+    &__text
+      +reg
+      font-size: 22px
+      color: $main-color
+      text-decoration: none
+    &__line
+      height: 1px
+      width: 100%
+      background-color: $second-color
+      margin-bottom: 20px
+    &__burger
+      width: 30px
+      height: 5px
+      background-color: $main-color
+      transition: 0.2s
+      &:before
+        content: ''
+        display: block
+        width: 30px
+        height: 5px
+        background-color: $main-color
+        transform: translateY(-10px)
+        transition: 0.2s
+      &:after
+        content: ''
+        display: block
+        width: 30px
+        height: 5px
+        background-color: $main-color
+        transform: translateY(5px)
+        transition: 0.2s
+      &_active
+        transform: rotate(45deg)
+        &:before
+          transform: rotate(90deg)
+        &:after
+          opacity: 0
+    &__whatsapp
+      margin-top: 10px
+      font-size: 18px
+    &__email
+      font-size: 16px
+    &__phone
+      display: none
+      margin-right: 10px
+      +bold
+      font-size: 18px
+
+// Стили подвала
+.footer
+  padding-top: 80px
+  padding-bottom: 30px
+  background-color: $footer-color
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &__logo
+    width: 160px
+  &-links
+    display: flex
+    &__list
+      margin: 0
+      padding: 0
+      margin-right: 80px
+      &:last-child
+        margin: 0
+    &__item
+      margin-bottom: 10px
+      list-style-type: none
+      font-size: 14px
+      a
+        color: $white
+        &:before
+          content: ''
+          display: inline-block
+          margin-right: 7px
+          width: 12px
+          height: 14px
+          vertical-align: middle
+          background-image: url('../img/main/footer/mark.png')
+          background-repeat: no-repeat
+          background-size: cover
+          opacity: 0.7
+        &:hover
+          text-decoration: underline
+        &:hover:before
+          opacity: 1
+  &-social
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__instagram
+      margin-bottom: 12px
+      img
+        margin-right: 7px
+        vertical-align: middle
+      a
+        color: $bg-color
+      &:hover
+        text-decoration: underline
+    &__qrcode
+      width: 140px
+  &-contacts
+    display: flex
+    flex-direction: column
+    &__item
+      margin-bottom: 14px
+      &:hover
+        text-decoration: underline
+    a
+      color: $bg-color
+    &__button
+      color: $white
+      background-color: transparent
+      border: 2px solid $bg-color
+      margin-top: 12px
+  &-info
+    display: flex
+    justify-content: space-between
+    margin-top: 20px
+    color: $footer-text
+    font-size: 13px
+    &__text
+      margin-bottom: 5px
+    &__author
+      display: flex
+      flex-direction: column
+    &__link
+      color: $footer-text
+      text-decoration: underline
+      &:hover
+        opacity: 0.8
+
+// Стили страницы с каталогом товаров
+.catalog-block
+  display: flex
+      

@@ -1,0 +1,54 @@
+.sidebar
+  flex-basis: 30%
+  &-block
+    padding-left: 25px
+    padding-bottom: 60px
+    max-width: 320px
+    border: 1px solid $main-color
+    &__title
+      display: inline-block
+      transform: translate(-5px ,-18px)
+      +bold
+      font-size: 24px
+      color: $main-color
+      background-color: $white
+      padding: 0 5px
+    &__subtitle
+      margin-top: -10px
+      margin-bottom: 20px
+      display: block
+      font-size: 16px
+      +reg
+  &-list
+    list-style: none
+    &__item
+      margin-top: -1px
+      margin-left: -25px
+      padding-left: 25px
+      a
+        padding-top: 10px
+        padding-bottom: 10px
+        display: block
+        height: 100%
+        font-size: 14px
+        color: $main-color
+        &:before
+          font-family: 'FontAwesome'
+          content: '\f105'
+          display: inline-block
+          width: 11px
+          color: $main-color
+          transition: 0.3s
+      &:hover
+        background-color: $main-color
+        a
+          color: $bg-color
+          &:before
+            color: $bg-color
+
+      &:after
+        content: ''
+        display: block
+        width: 91%
+        height: 1px
+        background-color: $main-color
