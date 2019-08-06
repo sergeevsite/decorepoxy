@@ -1566,7 +1566,7 @@ a {
   padding-left: 25px;
   padding-bottom: 60px;
   max-width: 320px;
-  border: 1px solid #262222;
+  border: 1px solid #d9d4d4;
 }
 
 .sidebar-block__title {
@@ -1649,9 +1649,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .catalog__title {
@@ -1693,6 +1690,9 @@ a {
 }
 
 .catalog__button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 200px;
   padding-left: 20px;
   border-radius: 0px;
@@ -2064,6 +2064,11 @@ a {
 }
 
 @media (max-width: 576px) {
+  .catalog {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .catalog-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
