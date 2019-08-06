@@ -2090,13 +2090,16 @@ a {
             align-items: center;
   }
   .catalog__title {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 22px;
     text-align: center;
   }
   .sidebar-block {
     margin-bottom: 50px;
     min-width: 300px;
+  }
+  .card {
+    width: 310px;
   }
   .cards {
     -webkit-box-pack: center;
