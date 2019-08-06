@@ -2,6 +2,7 @@
   flex-basis: 70%
   display: flex
   flex-direction: column
+  align-items: center
   &__title
     margin: 0
     margin-bottom: 35px
@@ -9,13 +10,12 @@
     color: $main-color
   &-sort
     display: flex
-    justify-content: space-between
-    width: 50%
+    align-items: center
+    justify-content: flex-end
     font-size: 14px
     color: $main-color
     &__mode
-      &:nth-child(2)
-        +bold
+      &:nth-child(1)
         &:after
           font-family: 'FontAwesome'
           content: '\f0dc'
@@ -23,16 +23,18 @@
           margin-left: 5px
           width: 10px
           color: $main-color
-      &:nth-child(3), &:nth-child(4)
-        color: lighten($main-color, 50%)
+    &__select
+      border: none
+    &__title
+      margin-right: 15px
   &__button
-    margin-right: 35%
-    margin-left: 35%
+    width: 200px
+    padding-left: 20px
     border-radius: 0px
     font-size: 16px
     &:hover
       cursor: pointer
-      background-color: lighten($main-color, 75%)
+      background-color: lighten($main-color, 83%)
       color: $main-color
 .card
   margin-top: 20px

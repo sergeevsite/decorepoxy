@@ -106,9 +106,11 @@
         <h1 class="catalog__title">Все категории товаров</h1>
         <div class="catalog-sort">
           <span class="catalog-sort__title">Сортировать по:</span>
-          <span class="catalog-sort__mode">по пулярности</span>
-          <span class="catalog-sort__mode">цене</span>
-          <span class="catalog-sort__mode">новинкам</span>
+          <select class="catalog-sort__select" name="sort" id="">
+            <option class="catalog-sort__mode" value="по пулярности">популярности</option>
+            <option class="catalog-sort__mode" value="цене">цене</option>
+            <option class="catalog-sort__mode" value="новинкам">новинкам</option>
+          </select>
         </div>
         <div class="cards catalog__cards">
           <div class="card">
