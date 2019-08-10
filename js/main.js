@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-// Настройки слайдера
+// Настройки слайдера в секции Work
   var worksSlider =  $(".owl-carousel");
   worksSlider.owlCarousel({
     items: 3,

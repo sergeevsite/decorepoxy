@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Decor Epoxy - О компании</title>
+  <title>Decor Epoxy - Каталог изделий</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./libs/jqueryFormstylerTheme/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./libs/fotorama/fotorama.css">
 </head>
 <body>
 <!-- Шапка -->
@@ -26,9 +27,9 @@
           <ul class="navbar__list">
             <li class="navbar__item">
               <a href="./index.html" class="navbar__text">Главная</a></li>
-            <li class="navbar__item">
-              <a href="./catalog.html" class="navbar__text">Каталог изделий</a></li>
             <li class="navbar_active">
+              <a href="./catalog.html" class="navbar__text">Каталог изделий</a></li>
+            <li class="navbar__item">
               <a href="./about.html" class="navbar__text">О компании</a></li>
             <li class="navbar__item">
               <a href="#" class="navbar__text">Контакты</a></li>
@@ -44,9 +45,9 @@
             <li class="menu-mobile__item">
               <a href="./index.html" class="menu-mobile__text">Главная</a></li>
             <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__text">Каталог изделий</a></li>
+              <a href="./catalog.html" class="menu-mobile__text">Каталог изделий</a></li>
             <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__text">О компании</a></li>
+              <a href="./about.html" class="menu-mobile__text">О компании</a></li>
             <li class="menu-mobile__item">
               <a href="#" class="menu-mobile__text">Контакты</a></li>
             <li class="menu-mobile__line"></li>
@@ -66,70 +67,112 @@
   </nav>
 
   <main>
-  <section class="back-navbar"></section>
-
-  <section class="about">
+    <section class="back-navbar"></section>
+    <div class="section item">
       <div class="container">
-        <div class="about-block">
-          <div class="about-text">
-            <h1 class="about-text__title">О компании</h1>
-            <p class="about-text__description"><strong>Decor Epoxy</strong> - это мастерская, где каждый образец делается с особым трепетом и любовью. Мы рады вам предложить столы из натурального дерева, которые будут дополнять уютом Ваш дом. Мы изготавливаем по-настоящему «Другую мебель», создающую уют и уникальность интерьерным решениям.</p>
+        <div class="item-block">
+          <div class="fotorama item-block__fotorama" data-thumbBorderWidth="2"  data-width="auto" data-height="auto" data-nav="thumbs" data-thumbwidth="210" data-thumbheight="120" data-shadows="false" data-loop="true">
+            <img src="./img/card/card-1.jpg" alt="" class="fotorama__image">
+            <img src="./img/card/card-2.jpg" alt="" class="fotorama__image">
+            <img src="./img/card/card-3.jpg" alt="" class="fotorama__image">
           </div>
-          <div class="about-image about-image__left">
-            <img src="./img/about/photo-1.jpg" alt="" class="about__photo">
-          </div>
-          <div class="about-image about-image__right">
-            <img src="./img/about/photo-2.jpg" alt="" class="about__photo">
-            <img src="./img/about/photo-3.jpg" alt="" class="about__photo">
+          <div class="card-info item-block__info">
+            <h1 class="card-info__title">Стол с эпоксидной смолой</h1>
+            <div class="articl card-info__articl">
+              <span class="articl__label">Артикул:</span>
+              <span class="articl__text">207207</span>
+            </div>
+            <div class="character card-info__character">
+              <span class="character__title">Основные характеристики</span>
+              <div class="character-info">
+                <div class="character-name">
+                  <span class="character-name__label">Порода дерева:</span>
+                  <span class="character-name__label">Цвет эпоксидной смолы:</span>
+                  <span class="character-name__label">Размеры(мм):</span>
+                </div>
+                <div class="character-data">
+                  <span class="character-data__text">дуб</span>
+                  <span class="character-data__text">голубой</span>
+                  <span class="character-data__text">1100x1100x300</span>
+                </div>
+              </div>
+            </div>
+            <span class="card-info__label-price">Цена:</span>
+            <span class="card-info__price">120 000 <sup>руб.</sup></span>
+            <!-- <span class="card-info__rouble">руб.</span> -->
+            <button class="button card-info__button">Заказать</button>
           </div>
         </div>
-        <!-- /.about-block -->
       </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.about -->
-
-    <section class="section materials">
-      <div class="container">
-        <div class="materials-block">
-          <h2 class="section-title materials__title">Материалы</h2>
-          <p class="materials__description">Мы используем высокотехнолгичные материалы для изготовления нашей продукции. Предлагаем столы, столешницы и барные стойки из слэбов пород дерева с заливкой эпоксидной смолой.</p>
-          <span class="materials__subtitle">Породы и виды древесины</span>
-          <div class="owl-carousel wood materials-slider">
-            <div class="wood-slide">
-              <img class="wood-slide__image" src="./img/about/wood-1.jpg" alt="">
-              <span class="wood-slide__title">Дуб</span>
+    </div>
+<!-- Такая же секция как и на главной странице -->
+    <section class="section works">
+        <div class="container">
+          <div class="works-block">
+            <h2 class="section-title works__title">Другие изделия</h2>
+            <!-- /.section-title works__title -->
+            <div class="owl-carousel works-slider">
+              <a href="#" class="works-slider__link">
+                <div class="works-slider__item">
+                  <img src="./img/main/works/product-1.jpg" alt="" class="works-slider__image">
+                  <span class="works-slider__text">Стол с заполнением камня</span>
+                  <span class="works-slider__price">50 000 руб.</span>
+                </div>
+                <!-- /.works-slider__item -->
+              </a>
+              <!-- /.works-slider__link -->
+              <a href="#" class="works-slider__link">
+                <div class="works-slider__item">
+                  <img src="./img/main/works/product-2.jpg" alt="" class="works-slider__image">
+                  <span class="works-slider__text">Стол с заполнением камня</span>
+                  <span class="works-slider__price">34 000 руб.</span>
+                </div>
+                <!-- /.works-slider__item -->
+              </a>
+              <!-- /.works-slider__link -->
+              <a href="#" class="works-slider__link">
+                <div class="works-slider__item">
+                  <img src="./img/main/works/product-3.jpg" alt="" class="works-slider__image">
+                  <span class="works-slider__text">Стол с заполнением камня</span>
+                  <span class="works-slider__price">32 000 руб.</span>
+                </div>
+                <!-- /.works-slider__item -->
+              </a>
+              <!-- /.works-slider__link -->
+              <a href="#" class="works-slider__link">
+                <div class="works-slider__item">
+                  <img src="./img/main/works/product-1.jpg" alt="" class="works-slider__image">
+                  <span class="works-slider__text">Стол с заполнением камня</span>
+                  <span class="works-slider__price">90 000 руб.</span>
+                </div>
+                <!-- /.works-slider__item -->
+              </a>
+              <!-- /.works-slider__link -->
+              <a href="#" class="works-slider__link">
+                <div class="works-slider__item">
+                  <img src="./img/main/works/product-2.jpg" alt="" class="works-slider__image">
+                  <span class="works-slider__text">Стол с заполнением камня</span>
+                  <span class="works-slider__price">129 000 руб.</span>
+                </div>
+                <!-- /.works-slider__item -->
+              </a>
+              <!-- /.works-slider__link -->
             </div>
-            <div class="wood-slide">
-              <img class="wood-slide__image" src="./img/about/wood-2.jpg" alt="">
-              <span class="wood-slide__title">Берёза</span>
-            </div>
-            <div class="wood-slide">
-              <img class="wood-slide__image" src="./img/about/wood-3.jpg" alt="">
-              <span class="wood-slide__title">Клён</span>
+            <!-- /.slider -->
+            <div class="works-controls">
+              <div id="worksControlsLeft" class="works-controls__left">
+                <img src="./img/main/works/left-arrow.svg" alt="">
+              </div>
+              <div id="worksControlsRight" class="works-controls__right">
+                <img src="./img/main/works/right-arrow.svg" alt="">
+              </div>
             </div>
           </div>
-          <div class="materials-help">
-            <span class="materials-help__icon">?</span>
-            <a href="#" class="materials-help__text"><span>подробнее о древесине</span></a>
-          </div>
-          <span class="materials__subtitle">Виды и цвета эпоксидной смолы</span>
-          <div class="epoxy materials-slider">
-            <div class="epoxy-slide">
-              <img class="epoxy-slide__image" src="#" alt="">
-              <span class="epoxy-slide__title"></span>
-            </div>
-          </div>
-          <div class="materials-help">
-            <span class="materials-help__icon">?</span>
-            <a href="#" class="materials-help__text"><span>подробнее об эпоксидной смоле</span></a>
-          </div>
+          <!-- /.works-block -->
         </div>
-        <!-- /.materials-block -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.materials -->
+        <!-- /.container -->
+      </section>
+      <!-- /.section works -->
 
   </main>
 
@@ -199,8 +242,9 @@
   </footer>
   <!-- Подключение скриптов -->
   <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
+  <script src="./js/main.js"></script>
   <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
   <script src="./libs/jqueryFormstylerTheme/jquery.formstyler.min.js"></script>
-  <script src="./js/about.js"></script>
+  <script src="./libs/fotorama/fotorama.js"></script>
 </body>
 </html>
