@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Decor Epoxy - О компании</title>
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./libs/slickSlider/slick.css">
   <link rel="stylesheet" href="./libs/jqueryFormstylerTheme/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.theme.default.min.css">
+  <!-- <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.theme.default.min.css"> -->
 </head>
 <body>
 <!-- Шапка -->
@@ -95,36 +96,71 @@
           <h2 class="section-title materials__title">Материалы</h2>
           <p class="materials__description">Мы используем высокотехнолгичные материалы для изготовления нашей продукции. Предлагаем столы, столешницы и барные стойки из слэбов пород дерева с заливкой эпоксидной смолой.</p>
           <span class="materials__subtitle">Породы и виды древесины</span>
-          <div class="owl-carousel wood materials-slider">
-            <div class="wood-slide">
-              <img class="wood-slide__image" src="./img/about/wood-1.jpg" alt="">
-              <span class="wood-slide__title">Дуб</span>
+          <div class="wood materials-slider">
+            <div id="sliderControlsLeft" class="wood-control wood-control__left">
+              <img src="./img/main/works/left-arrow.svg" alt="">
             </div>
-            <div class="wood-slide">
-              <img class="wood-slide__image" src="./img/about/wood-2.jpg" alt="">
-              <span class="wood-slide__title">Берёза</span>
+            <div class="wood-slider">
+              <div class="wood-slide">
+                <img class="wood-slide__image" src="./img/about/wood-1.png" alt="">
+                <span class="wood-slide__title">Дуб</span>
+                <div class="wood-slide__border"></div>
+              </div>
+              <div class="wood-slide">
+                <img class="wood-slide__image" src="./img/about/wood-2.png" alt="">
+                <span class="wood-slide__title">Сосна</span>
+                <div class="wood-slide__border"></div>
+              </div>
+              <div class="wood-slide">
+                <img class="wood-slide__image" src="./img/about/wood-3.png" alt="">
+                <span class="wood-slide__title">Клён</span>
+                <div class="wood-slide__border"></div>
+              </div>
+              <div class="wood-slide">
+                <img class="wood-slide__image" src="./img/about/wood-3.png" alt="">
+                <span class="wood-slide__title">Клён</span>
+                <div class="wood-slide__border"></div>
+              </div>
+              <div class="wood-slide">
+                <img class="wood-slide__image" src="./img/about/wood-3.png" alt="">
+                <span class="wood-slide__title">Клён</span>
+                <div class="wood-slide__border"></div>
+              </div>
             </div>
-            <div class="wood-slide">
-              <img class="wood-slide__image" src="./img/about/wood-3.jpg" alt="">
-              <span class="wood-slide__title">Клён</span>
+            <div id="sliderControlsRight" class="wood-control wood-control__right">
+              <img src="./img/main/works/right-arrow.svg" alt="">
             </div>
           </div>
+          
+          
           <div class="materials-help">
             <span class="materials-help__icon">?</span>
             <a href="#" class="materials-help__text"><span>подробнее о древесине</span></a>
           </div>
           <span class="materials__subtitle">Виды и цвета эпоксидной смолы</span>
           <div class="epoxy materials-slider">
-            <div class="epoxy-slide">
-              <img class="epoxy-slide__image" src="#" alt="">
-              <span class="epoxy-slide__title"></span>
+            <div class="epoxy-slider">
+              <div class="epoxy-slide">
+                <img class="epoxy-slide__image" src="./img/about/epoxy-1.png" alt="">
+                <span class="epoxy-slide__title">Дуб</span>
+                <div class="epoxy-slide__border"></div>
+              </div>
+              <div class="epoxy-slide">
+                <img class="epoxy-slide__image" src="./img/about/epoxy-1.png" alt="">
+                <span class="epoxy-slide__title">Дуб</span>
+                <div class="epoxy-slide__border"></div>
+              </div>
+              <div class="epoxy-slide">
+                <img class="epoxy-slide__image" src="./img/about/epoxy-1.png" alt="">
+                <span class="epoxy-slide__title">Дуб</span>
+                <div class="epoxy-slide__border"></div>
+              </div>
             </div>
           </div>
           <div class="materials-help">
             <span class="materials-help__icon">?</span>
             <a href="#" class="materials-help__text"><span>подробнее об эпоксидной смоле</span></a>
           </div>
-        </div>
         <!-- /.materials-block -->
       </div>
       <!-- /.container -->
@@ -199,8 +235,10 @@
   </footer>
   <!-- Подключение скриптов -->
   <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
-  <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
+  <!-- <script src="./libs/owlcarousel2/owl.carousel.min.js"></script> -->
   <script src="./libs/jqueryFormstylerTheme/jquery.formstyler.min.js"></script>
+  <script src="./libs/slickSlider/slick.min.js"></script>
   <script src="./js/about.js"></script>
+  
 </body>
 </html>

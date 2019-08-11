@@ -17,15 +17,69 @@
     text-align: center
     +reg
     font-size: 18px
+
+// Слайдер виды дерева
 .wood
+  width: 650px
+  margin: auto
+  position: relative
+  &:after
+    content: ''
+    width: 100%
+    height: 300px
+    display: block
+    position: absolute
+    top: 0
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,0,255,0) 10%, rgba(255,0,255,0) 50%, rgba(255,0,255,0) 90%, rgba(255,255,255,1) 100%)
+  &-control
+    width: 40px
+    position: absolute
+    z-index: 10
+    &__left
+      left: -40px
+      top: 40%
+    &__right
+      right: -40px
+      top: 40%
   &-slide
+    width: 200px
+    height: 300px
     display: flex
     flex-direction: column
-    align-items: center
     justify-content: center
+    align-items: center
+    outline: none
+    &__border
+      position: absolute
+      bottom: 20px
+      visibility: hidden
+      width: 130px
+      height: 90px
+      border: 2px solid $bg-color
+      border-radius: 20px
+      z-index: -1
     &__image
-      max-width: 150px
+      max-width: 120px
+      box-shadow: 0 3px 16px rgba(28, 34, 72, 0.21)
+      border-radius: 50%
+      opacity: 0.5
+      transition: 0.2s
     &__title
+      +reg
+      margin-top: 10px
+      visibility: hidden
       color: $main-color
       font-size: 16px
-      text-transform: uppercase
+.slick-current
+  .wood
+    &-slide
+      &__border
+        visibility: visible
+      &__image
+        max-width: 200px
+        opacity: 1
+      &__title
+        visibility: visible
+.slick-disabled
+  img
+    visibility: hidden
