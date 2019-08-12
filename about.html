@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="./libs/slickSlider/slick.css">
   <link rel="stylesheet" href="./libs/jqueryFormstylerTheme/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="./css/style.css">
-  <!-- <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.theme.default.min.css"> -->
+  <link rel="stylesheet" href="./libs/fotorama/fotorama.css">
 </head>
 <body>
 <!-- Шапка -->
@@ -96,77 +95,220 @@
           <h2 class="section-title materials__title">Материалы</h2>
           <p class="materials__description">Мы используем высокотехнолгичные материалы для изготовления нашей продукции. Предлагаем столы, столешницы и барные стойки из слэбов пород дерева с заливкой эпоксидной смолой.</p>
           <span class="materials__subtitle">Породы и виды древесины</span>
+
           <div class="wood materials-slider">
-            <div id="sliderControlsLeft" class="wood-control wood-control__left">
+            <div id="woodControlsLeft" class="materials-control materials-control__left">
               <img src="./img/main/works/left-arrow.svg" alt="">
             </div>
             <div class="wood-slider">
-              <div class="wood-slide">
-                <img class="wood-slide__image" src="./img/about/wood-1.png" alt="">
-                <span class="wood-slide__title">Дуб</span>
-                <div class="wood-slide__border"></div>
+              <div class="materials-slide">
+                <img class="materials-slide__image" src="./img/about/materials/wood-1.png" alt="">
+                <div class="materials-slide__border">
+                  <span class="materials-slide__title">Дуб</span>
+                </div>
               </div>
-              <div class="wood-slide">
-                <img class="wood-slide__image" src="./img/about/wood-2.png" alt="">
-                <span class="wood-slide__title">Сосна</span>
-                <div class="wood-slide__border"></div>
+              <div class="materials-slide">
+                <img class="materials-slide__image" src="./img/about/materials/wood-2.png" alt="">
+                <div class="materials-slide__border">
+                  <span class="materials-slide__title">Сосна</span>
+                </div>
               </div>
-              <div class="wood-slide">
-                <img class="wood-slide__image" src="./img/about/wood-3.png" alt="">
-                <span class="wood-slide__title">Клён</span>
-                <div class="wood-slide__border"></div>
+              <div class="materials-slide">
+                <img class="materials-slide__image" src="./img/about/materials/wood-3.png" alt="">
+                <div class="materials-slide__border">
+                  <span class="materials-slide__title">Клён</span>
+                </div>
               </div>
-              <div class="wood-slide">
-                <img class="wood-slide__image" src="./img/about/wood-3.png" alt="">
-                <span class="wood-slide__title">Клён</span>
-                <div class="wood-slide__border"></div>
+              <div class="materials-slide">
+                <img class="materials-slide__image" src="./img/about/materials/wood-2.png" alt="">
+                <div class="materials-slide__border">
+                  <span class="materials-slide__title">Клён</span>
+                </div>
               </div>
-              <div class="wood-slide">
-                <img class="wood-slide__image" src="./img/about/wood-3.png" alt="">
-                <span class="wood-slide__title">Клён</span>
-                <div class="wood-slide__border"></div>
+              <div class="materials-slide">
+                <img class="materials-slide__image" src="./img/about/materials/wood-1.png" alt="">
+                <div class="materials-slide__border">
+                  <span class="materials-slide__title">Клён</span>
+                </div>
               </div>
             </div>
-            <div id="sliderControlsRight" class="wood-control wood-control__right">
+            <div id="woodControlsRight" class="materials-control materials-control__right">
               <img src="./img/main/works/right-arrow.svg" alt="">
             </div>
           </div>
-          
-          
+
           <div class="materials-help">
-            <span class="materials-help__icon">?</span>
+            <img src="./img/about/materials/help.svg" alt="" class="materials-help__icon">
             <a href="#" class="materials-help__text"><span>подробнее о древесине</span></a>
           </div>
           <span class="materials__subtitle">Виды и цвета эпоксидной смолы</span>
+
           <div class="epoxy materials-slider">
+            <div id="epoxyControlsLeft" class="materials-control materials-control__left">
+              <img src="./img/main/works/left-arrow.svg" alt="">
+            </div>
             <div class="epoxy-slider">
-              <div class="epoxy-slide">
-                <img class="epoxy-slide__image" src="./img/about/epoxy-1.png" alt="">
-                <span class="epoxy-slide__title">Дуб</span>
-                <div class="epoxy-slide__border"></div>
+              <div class="materials-slide">
+                <img class="materials-slide__image" src="./img/about/materials/epoxy-1.png" alt="">
+                <div class="materials-slide__border">
+                  <span class="materials-slide__title">Синяя</span>
+                </div>
               </div>
-              <div class="epoxy-slide">
-                <img class="epoxy-slide__image" src="./img/about/epoxy-1.png" alt="">
-                <span class="epoxy-slide__title">Дуб</span>
-                <div class="epoxy-slide__border"></div>
+              <div class="materials-slide">
+                <img class="materials-slide__image" src="./img/about/materials/epoxy-2.png" alt="">
+                <div class="materials-slide__border">
+                  <span class="materials-slide__title">Камень в эпоксидной смоле</span>
+                </div>
               </div>
-              <div class="epoxy-slide">
-                <img class="epoxy-slide__image" src="./img/about/epoxy-1.png" alt="">
-                <span class="epoxy-slide__title">Дуб</span>
-                <div class="epoxy-slide__border"></div>
+              <div class="materials-slide">
+                <img class="materials-slide__image" src="./img/about/materials/epoxy-3.png" alt="">
+                <div class="materials-slide__border">
+                  <span class="materials-slide__title">Белая с черным</span>
+                </div>
               </div>
             </div>
+            <div id="epoxyControlsRight" class="materials-control materials-control__right">
+              <img src="./img/main/works/right-arrow.svg" alt="">
+            </div>
           </div>
+
           <div class="materials-help">
-            <span class="materials-help__icon">?</span>
+            <img src="./img/about/materials/help.svg" alt="" class="materials-help__icon">
             <a href="#" class="materials-help__text"><span>подробнее об эпоксидной смоле</span></a>
           </div>
+        </div>
         <!-- /.materials-block -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.materials -->
 
+    <section class="section team">
+      <div class="container">
+        <div class="team-block">
+          <h2 class="section-title team__title">Наша команда</h2>
+          <div class="team-tag">
+            <span class="team-tag__name">Руководство</span>
+          </div>
+          <div class="team-head">
+            <div class="team-head__card">
+              <div class="team-head__image">
+                <img src="./img/about/team/photo.jpg" class="team-head__photo"></img>
+              </div>
+              <h3 class="team-head__name">Имя Фамилия</h3>
+              <div class="team-head__info">
+                <span class="team-head__place">Директор</span>
+                <p class="team-head__text">Руководит и управляет всеми процессами в команде. Максимум 120 символов в этом тексте.</p>
+              </div>
+            </div>
+            <div class="team-head__card">
+              <div class="team-head__image">
+                <img src="./img/about/team/photo.jpg" class="team-head__photo"></img>
+              </div>
+              <h3 class="team-head__name">Имя Фамилия</h3>
+              <div class="team-head__info">
+                <span class="team-head__place">Директор</span>
+                <p class="team-head__text">Руководит и управляет всеми процессами в команде.</p>
+              </div>
+            </div>
+          </div>
+          <div class="team-tag">
+            <span class="team-tag__name">Мастера</span>
+          </div>
+          <div class="team-head">
+              <div class="team-head__card">
+                <div class="team-head__image">
+                  <img src="./img/about/team/photo.jpg" class="team-head__photo"></img>
+                </div>
+                <h3 class="team-head__name">Имя Фамилия</h3>
+                <div class="team-head__info">
+                  <span class="team-head__place">Главный мастер</span>
+                  <p class="team-head__text">Руководит и управляет всеми процессами в команде. Максимум 120 символов в этом тексте.</p>
+                </div>
+              </div>
+              <div class="team-head__card">
+                <div class="team-head__image">
+                  <img src="./img/about/team/photo.jpg" class="team-head__photo"></img>
+                </div>
+                <h3 class="team-head__name">Имя Фамилия</h3>
+                <div class="team-head__info">
+                  <span class="team-head__place">Мастер</span>
+                  <p class="team-head__text">Руководит и управляет всеми процессами в команде.</p>
+                </div>
+              </div>
+              <div class="team-head__card">
+                <div class="team-head__image">
+                  <img src="./img/about/team/photo.jpg" class="team-head__photo"></img>
+                </div>
+                <h3 class="team-head__name">Имя Фамилия</h3>
+                <div class="team-head__info">
+                  <span class="team-head__place">Мастер</span>
+                  <p class="team-head__text">Руководит и управляет всеми процессами в команде.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- /.team-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.team -->
+
+    <section class="section choice">
+      <div class="container">
+        <h2 class="section-title choice__title">Почему выбирают именно нас?</h2>
+        <div class="choice-block">
+          <div class="choice-plus">
+            <div class="choice-plus__image">
+              <img src="./img/about/choice/garant.png" alt="">
+            </div>
+            <span class="choice-plus__title">Преимущество 1</span>
+            <p class="choice-plus__text">Тут должен быть текст про преимущество компании</p>
+          </div>
+          <div class="choice-plus">
+            <div class="choice-plus__image">
+              <img src="./img/about/choice/eco.png" alt="">
+            </div>
+            <span class="choice-plus__title">Преимущество 2</span>
+            <p class="choice-plus__text">Тут должен быть текст про преимущество компании</p>
+          </div>
+          <div class="choice-plus">
+            <div class="choice-plus__image">
+              <img src="./img/about/choice/dilevery.png" alt="">
+            </div>
+            <span class="choice-plus__title">Преимущество 3</span>
+            <p class="choice-plus__text">Тут должен быть текст про преимущество компании</p>
+          </div>
+          <div class="choice-plus">
+            <div class="choice-plus__image">
+              <img src="./img/about/choice/social.png" alt="">
+            </div>
+            <span class="choice-plus__title">Преимущество 4</span>
+            <p class="choice-plus__text">Тут должен быть текст про преимущество компании</p>
+          </div>
+        </div>
+        <!-- /.choice-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section choice -->
+
+
+    <section class="section gallery">
+      <div class="container">
+        <h2 class="section-title gallery__title">Процесс производства</h2>
+        <div class="gallery-block">
+          <img src="./img/card/card-1.jpg" alt="" class="gallery-block__photo">
+          <img src="./img/card/card-1.jpg" alt="" class="gallery-block__photo">
+          <img src="./img/card/card-1.jpg" alt="" class="gallery-block__photo">
+          <img src="./img/card/card-1.jpg" alt="" class="gallery-block__photo">
+          <img src="./img/card/card-1.jpg" alt="" class="gallery-block__photo">
+          <img src="./img/card/card-1.jpg" alt="" class="gallery-block__photo">
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section gallery -->
   </main>
 
   <footer class="footer">
@@ -218,7 +360,7 @@
           <a href="mailto:decorepoxy@mail.ru" class="contact footer-contacts__item email"><img src="./img/main/footer/envelope.svg" alt="Почта">decorepoxy@mail.ru</a>
           <button class="button callback footer-contacts__button">Заказать звонок</button>
         </div>
-        <!-- /.footer-contacts -->
+        <!-- /.footer-contacts --> 
       </div>
       <!-- /.footer-block -->
       <div class="footer-info">
@@ -235,10 +377,10 @@
   </footer>
   <!-- Подключение скриптов -->
   <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
-  <!-- <script src="./libs/owlcarousel2/owl.carousel.min.js"></script> -->
+  <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
   <script src="./libs/jqueryFormstylerTheme/jquery.formstyler.min.js"></script>
   <script src="./libs/slickSlider/slick.min.js"></script>
-  <script src="./js/about.js"></script>
-  
+  <script src="./js/main.js"></script>
+  <script src="./libs/fotorama/fotorama.js"></script>
 </body>
 </html>

@@ -88,5 +88,30 @@ $('#menu-btn').click(function(){
     }
 });
 
+
+// Slick Slider
+
+$('.wood-slider').slick({
+  centerMode: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: true,
+  speed: 100,
+  infinite: true,
+  nextArrow: '#woodControlsRight',
+  prevArrow: '#woodControlsLeft'
+});
+
+$('.epoxy-slider').slick({
+  centerMode: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: true,
+  speed: 100,
+  infinite: true,
+  nextArrow: '#epoxyControlsRight',
+  prevArrow: '#epoxyControlsLeft'
+});
+
 });
 
