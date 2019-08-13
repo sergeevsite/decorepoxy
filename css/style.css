@@ -2852,8 +2852,29 @@ a {
 }
 
 @media (max-width: 768px) {
+  .materials {
+    padding-bottom: 20px;
+  }
   .materials-slider {
     margin: 0;
+  }
+  .materials-control {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .choice {
+    padding-bottom: 20px;
+  }
+  .choice-block {
+    margin-top: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .choice-plus {
+    margin-bottom: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

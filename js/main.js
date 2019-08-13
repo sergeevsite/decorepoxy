@@ -100,7 +100,15 @@ $('.wood-slider').slick({
   infinite: true,
   nextArrow: '#woodControlsRight',
   prevArrow: '#woodControlsLeft',
-
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        variableWidth: false,
+        arrows: false,
+      }
+    },
+  ]
 });
 
 $('.epoxy-slider').slick({
@@ -111,7 +119,16 @@ $('.epoxy-slider').slick({
   speed: 100,
   infinite: true,
   nextArrow: '#epoxyControlsRight',
-  prevArrow: '#epoxyControlsLeft'
+  prevArrow: '#epoxyControlsLeft',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        variableWidth: false,
+        arrows: false,
+      }
+    },
+  ]
 });
 
 });
