@@ -99,7 +99,8 @@ $('.wood-slider').slick({
   speed: 100,
   infinite: true,
   nextArrow: '#woodControlsRight',
-  prevArrow: '#woodControlsLeft'
+  prevArrow: '#woodControlsLeft',
+
 });
 
 $('.epoxy-slider').slick({

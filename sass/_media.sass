@@ -235,16 +235,6 @@
       margin-bottom: 10px
       &:before
         display: none
-      //   display: block
-      //   bottom: 0
-      //   width: 10px
-      //   height: 445px
-      //   top: 0
-      //   left: 100%
-      //   border-left: none
-      //   border-bottom: none
-      //   border-top: none
-      //   background-color: $main-color
       &:after
         border-left: none
         border-bottom: none
@@ -283,3 +273,32 @@
   .card
     &-info
       padding-top: 10px
+// Страница о компании
+@media (max-width: 991px)
+  .about
+    &-image
+      max-width: 350px
+@media (max-width: 768px)
+  .about
+    height: 315px
+    &-block
+      padding-top: 40px
+      justify-content: center
+    &-text
+      text-align: center
+      &__title
+        font-size: 32px
+      &__description
+        font-size: 14px
+        line-height: 1.7
+    &-image
+      display: none
+@media (max-width: 576px)
+  .about
+    height: 380px
+    &-block
+      padding-top: 20px
+// Секция материалы
+@media (max-width: 768px)
+  .materials
+    

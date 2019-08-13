@@ -1981,31 +1981,30 @@ a {
 }
 
 .about-text__description {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
-.about-image {
+.about-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.about-image {
   position: relative;
+  width: 100%;
+  max-width: 550px;
+  margin-left: 30px;
   z-index: 1;
 }
 
-.about-image__left {
-  margin-left: 80px;
-  margin-right: 10px;
-}
-
-.about-image__right {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.about-image__photo {
+  -webkit-box-shadow: 0 1px 15px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 15px 4px rgba(0, 0, 0, 0.3);
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 350px;
 }
 
 .materials-block {
@@ -2019,7 +2018,7 @@ a {
 .materials__description {
   margin: auto;
   margin-bottom: 60px;
-  width: 730px;
+  max-width: 730px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -2327,15 +2326,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 150px;
-  height: 150px;
+  width: 110px;
+  height: 110px;
   margin-bottom: 20px;
   border: 6px solid #e8b652;
   border-radius: 50%;
 }
 
 .choice-plus__image img {
-  width: 80px;
+  width: 50px;
 }
 
 .choice-plus__title {
@@ -2370,8 +2369,10 @@ a {
 
 .gallery-block__photo {
   padding: 10px;
-  max-width: 320px;
-  height: auto;
+  width: 320px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -2807,6 +2808,46 @@ a {
 @media (max-width: 576px) {
   .card-info {
     padding-top: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-image {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    height: 315px;
+  }
+  .about-block {
+    padding-top: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .about-text__title {
+    font-size: 32px;
+  }
+  .about-text__description {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .about-image {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    height: 380px;
+  }
+  .about-block {
+    padding-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
