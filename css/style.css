@@ -2753,9 +2753,7 @@ a {
     display: none;
   }
   .card-info:after {
-    left: none;
-    border: 500px solid #262222;
-    z-index: -1;
+    display: none;
   }
   .card-info__title {
     text-align: center;
