@@ -2850,4 +2850,10 @@ a {
     padding-top: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .materials-slider {
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
