@@ -162,7 +162,7 @@
     &:focus::placeholder
       transform: translateY(0px)
 // footer
-@media (max-width: 576px)
+@media (max-width: 960px)
   .footer
     padding-top: 40px
     &-block
@@ -176,6 +176,7 @@
         margin-right: 20px
     &-info
       flex-direction: column
+      text-align: center
       &__author
         margin-bottom: 5px
     &-social
@@ -234,11 +235,25 @@
       margin-bottom: 10px
       &:before
         display: none
+      //   display: block
+      //   bottom: 0
+      //   width: 10px
+      //   height: 445px
+      //   top: 0
+      //   left: 100%
+      //   border-left: none
+      //   border-bottom: none
+      //   border-top: none
+      //   background-color: $main-color
       &:after
-        display: none
-        // left: none
-        // border: 100% solid $main-color
-        // z-index: -1
+        border-left: none
+        border-bottom: none
+        width: 107%
+        height: 100%
+        background-color: $main-color
+        left: 50%
+        transform: translateX(-50%)
+        z-index: -1
       &__title
         text-align: center
         font-size: 22px

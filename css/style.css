@@ -2624,7 +2624,7 @@ a {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 960px) {
   .footer {
     padding-top: 40px;
   }
@@ -2651,6 +2651,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
   .footer-info__author {
     margin-bottom: 5px;
@@ -2753,7 +2754,15 @@ a {
     display: none;
   }
   .card-info:after {
-    display: none;
+    border-left: none;
+    border-bottom: none;
+    width: 107%;
+    height: 100%;
+    background-color: #262222;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: -1;
   }
   .card-info__title {
     text-align: center;
