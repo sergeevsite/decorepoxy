@@ -8,8 +8,8 @@
     padding-top: 30px
     padding-bottom: 80px
     &-title
-      font-size: 22px
-      margin-bottom: 50px
+      font-size: 20px
+      margin-bottom: 30px
   .back-navbar
     padding: 32px 0
 // navbar
@@ -218,10 +218,46 @@
       width: 100%
     &s
       justify-content: center
-@media (max-width: 576px)
+@media (max-width: 768px)
+  .card
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding-top: 10px
+      padding-left: 20px
+      padding-right: 20px
+      padding-bottom: 20px
+      margin-left: 0
+      margin-top: -30px
+      margin-bottom: 10px
+      &:before
+        display: none
+      &:after
+        display: none
+      &__title
+        text-align: center
+        font-size: 22px
+      &__articl
+        margin-bottom: 40px
+      &__label-price
+        display: none
+        font-size: 16px
+      &__price
+        font-size: 35px
+      &__button
+        margin-top: 20px
+  .character
+    &-info
+      margin-bottom: 25px
+    &__title
+      font-size: 14px
+  .item
+    padding-bottom: 10px
   .item-block
     flex-direction: column-reverse
     &__fotorama
       padding: 0
   .fotorama__nav-wrap
     display: none
+  
