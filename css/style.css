@@ -2741,10 +2741,10 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 10px;
+    padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     margin-left: 0;
     margin-top: -30px;
     margin-bottom: 10px;
@@ -2753,7 +2753,9 @@ a {
     display: none;
   }
   .card-info:after {
-    display: none;
+    left: none;
+    border: 500px solid #262222;
+    z-index: -1;
   }
   .card-info__title {
     text-align: center;
@@ -2792,6 +2794,12 @@ a {
   }
   .fotorama__nav-wrap {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-info {
+    padding-top: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

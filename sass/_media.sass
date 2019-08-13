@@ -224,17 +224,19 @@
       display: flex
       flex-direction: column
       align-items: center
-      padding-top: 10px
+      padding-top: 40px
       padding-left: 20px
       padding-right: 20px
-      padding-bottom: 20px
+      padding-bottom: 40px
       margin-left: 0
       margin-top: -30px
       margin-bottom: 10px
       &:before
         display: none
       &:after
-        display: none
+        left: none
+        border: 500px solid $main-color
+        z-index: -1
       &__title
         text-align: center
         font-size: 22px
@@ -260,4 +262,7 @@
       padding: 0
   .fotorama__nav-wrap
     display: none
-  
+@media (max-width: 576px)
+  .card
+    &-info
+      padding-top: 10px
