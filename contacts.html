@@ -4,13 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Decor Epoxy - Каталог изделий</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./libs/jqueryFormstylerTheme/jquery.formstyler.theme.css">
+  <title>Decor Epoxy - Контакты</title>
+  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="./libs/fotorama/fotorama.css">
 </head>
 <body>
 <!-- Шапка -->
@@ -27,11 +23,11 @@
           <ul class="navbar__list">
             <li class="navbar__item">
               <a href="./index.html" class="navbar__text">Главная</a></li>
-            <li class="navbar_active">
+            <li class="navbar__item">
               <a href="./catalog.html" class="navbar__text">Каталог изделий</a></li>
             <li class="navbar__item">
               <a href="./about.html" class="navbar__text">О компании</a></li>
-            <li class="navbar__item">
+            <li class="navbar_active">
               <a href="./contacts.html" class="navbar__text">Контакты</a></li>
           </ul>
         </div>
@@ -67,111 +63,55 @@
   </nav>
 
   <main>
-    <section class="back-navbar"></section>
-    <div class="section item">
-      <div class="container">
-        <div class="item-block">
-          <div class="fotorama item-block__fotorama" data-thumbBorderWidth="2"  data-width="auto" data-height="auto" data-nav="thumbs" data-thumbwidth="210" data-thumbheight="120" data-shadows="false" data-loop="true">
-            <img src="./img/card/card-1.jpg" alt="" class="fotorama__image">
-            <img src="./img/card/card-2.jpg" alt="" class="fotorama__image">
-            <img src="./img/card/card-3.jpg" alt="" class="fotorama__image">
-          </div>
-          <div class="card-info item-block__info">
-            <h1 class="card-info__title">Стол с эпоксидной смолой</h1>
-            <div class="articl card-info__articl">
-              <span class="articl__label">Артикул:</span>
-              <span class="articl__text">207207</span>
-            </div>
-            <div class="character card-info__character">
-              <span class="character__title">Основные характеристики</span>
-              <div class="character-info">
-                <div class="character-name">
-                  <span class="character-name__label">Порода дерева:</span>
-                  <span class="character-name__label">Цвет смолы:</span>
-                  <span class="character-name__label">Размеры(мм):</span>
-                </div>
-                <div class="character-data">
-                  <span class="character-data__text">дуб</span>
-                  <span class="character-data__text">голубой</span>
-                  <span class="character-data__text">1100x1100x300</span>
-                </div>
-              </div>
-            </div>
-            <span class="card-info__label-price">Цена:</span>
-            <span class="card-info__price">120 000 <sup>руб.</sup></span>
-            <button class="button card-info__button">Заказать</button>
-          </div>
-        </div>
+  <div class="back-navbar"></div>
+
+  <section class="section contacts">
+    <div class="contacts-block">
+      <div id="map" class="contacts-map">
       </div>
-    </div>
-<!-- Такая же секция как и на главной странице -->
-    <section class="section works">
-        <div class="container">
-          <div class="works-block">
-            <h2 class="section-title works__title">Другие изделия</h2>
-            <!-- /.section-title works__title -->
-            <div class="owl-carousel works-slider">
-              <a href="#" class="works-slider__link">
-                <div class="works-slider__item">
-                  <img src="./img/main/works/product-1.jpg" alt="" class="works-slider__image">
-                  <span class="works-slider__text">Стол с заполнением камня</span>
-                  <span class="works-slider__price">50 000 руб.</span>
-                </div>
-                <!-- /.works-slider__item -->
-              </a>
-              <!-- /.works-slider__link -->
-              <a href="#" class="works-slider__link">
-                <div class="works-slider__item">
-                  <img src="./img/main/works/product-2.jpg" alt="" class="works-slider__image">
-                  <span class="works-slider__text">Стол с заполнением камня</span>
-                  <span class="works-slider__price">34 000 руб.</span>
-                </div>
-                <!-- /.works-slider__item -->
-              </a>
-              <!-- /.works-slider__link -->
-              <a href="#" class="works-slider__link">
-                <div class="works-slider__item">
-                  <img src="./img/main/works/product-3.jpg" alt="" class="works-slider__image">
-                  <span class="works-slider__text">Стол с заполнением камня</span>
-                  <span class="works-slider__price">32 000 руб.</span>
-                </div>
-                <!-- /.works-slider__item -->
-              </a>
-              <!-- /.works-slider__link -->
-              <a href="#" class="works-slider__link">
-                <div class="works-slider__item">
-                  <img src="./img/main/works/product-1.jpg" alt="" class="works-slider__image">
-                  <span class="works-slider__text">Стол с заполнением камня</span>
-                  <span class="works-slider__price">90 000 руб.</span>
-                </div>
-                <!-- /.works-slider__item -->
-              </a>
-              <!-- /.works-slider__link -->
-              <a href="#" class="works-slider__link">
-                <div class="works-slider__item">
-                  <img src="./img/main/works/product-2.jpg" alt="" class="works-slider__image">
-                  <span class="works-slider__text">Стол с заполнением камня</span>
-                  <span class="works-slider__price">129 000 руб.</span>
-                </div>
-                <!-- /.works-slider__item -->
-              </a>
-              <!-- /.works-slider__link -->
-            </div>
-            <!-- /.slider -->
-            <div class="works-controls">
-              <div id="worksControlsLeft" class="works-controls__left">
-                <img src="./img/main/works/left-arrow.svg" alt="">
-              </div>
-              <div id="worksControlsRight" class="works-controls__right">
-                <img src="./img/main/works/right-arrow.svg" alt="">
-              </div>
-            </div>
+      <!-- /.contacts-map -->
+      <div class="contacts-info">
+        <h1 class="section-title contacts__title">Контакты</h1>
+        <div class="contacts-address">
+          <div class="contacts-text">
+            <img src="./img/contacts/storage.svg" alt="" class="contacts-info__icon">
+            <h2 class="contacts-info__title">Склад и производство</h2>
           </div>
-          <!-- /.works-block -->
+          <p class="contacts-info__text">г. Казань, ул. Декабристов, 2</p>
         </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.section works -->
+        <div class="contacts-use">
+          <div class="contacts-dilivery">
+            <div class="contacts-text">
+              <img src="./img/contacts/delivery.svg" alt="" class="contacts-info__icon">
+              <h2 class="contacts-info__title">Условия доставки</h2>
+            </div>
+            <p class="contacts-info__text">Доставка за ваш счет осуществляется <br> по г. Казань. День и время доставки обговариваются заранее по телефону.</p>
+          </div>
+          <div class="contacts-pay">
+            <div class="contacts-text">
+              <img src="./img/contacts/creditCards.svg" alt="" class="contacts-info__icon">
+              <h2 class="contacts-info__title">Условия оплаты</h2>
+            </div>
+            <p class="contacts-info__text"> Доставка продукции производится после 100% оплаты. Оплата производиться на счет компании или переводом на карту.</p>
+          </div>
+        </div>
+        <div class="contacts-address">
+          <div class="contacts-text">
+            <img src="./img/contacts/shield.svg" alt="" class="contacts-info__icon">
+            <h2 class="contacts-info__title">Гарантии</h2>
+          </div>
+          <p class="contacts-info__text">Мы предоставляем гарантию на дефекты и качество работы. В течении 14 дней после покупки изделия по вопросам гарантии можете обратиться по телефону.</p>
+        </div>
+        <h2 class="contacts-info__title">Способы оплаты</h2>
+        <img src="./img/contacts/visa.svg" alt="" class="contacts-info__pay">
+        <img src="./img/contacts/mastercard.svg" alt="" class="contacts-info__pay">
+        <img src="" alt="" class="contacts-info__pay">
+      </div>
+      <!-- /.contacts-info -->
+    </div>
+    <!-- /.contacts-block -->
+  </section>
+  <!-- /.section contacts -->
 
   </main>
 
@@ -224,7 +164,7 @@
           <a href="mailto:decorepoxy@mail.ru" class="contact footer-contacts__item email"><img src="./img/main/footer/envelope.svg" alt="Почта">decorepoxy@mail.ru</a>
           <button class="button callback footer-contacts__button">Заказать звонок</button>
         </div>
-        <!-- /.footer-contacts -->
+        <!-- /.footer-contacts --> 
       </div>
       <!-- /.footer-block -->
       <div class="footer-info">
@@ -242,9 +182,6 @@
   <!-- Подключение скриптов -->
   <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
   <script src="./js/mobileMenu.js"></script>
-  <script src="./js/main.js"></script>
-  <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
-  <script src="./libs/jqueryFormstylerTheme/jquery.formstyler.min.js"></script>
-  <script src="./libs/fotorama/fotorama.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=de047c46-471b-4d2d-8aed-d1559123e4cd&lang=ru_RU"></script>
 </body>
 </html>
