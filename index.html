@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Decor Epoxy</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./libs/jqueryFormstylerTheme/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="./libs/select2/select2.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.theme.default.min.css">
@@ -27,7 +26,7 @@
             <li class="navbar_active">
               <a href="./index.html" class="navbar__text">Главная</a></li>
             <li class="navbar__item">
-              <a href="./catalog.html" class="navbar__text">Каталог изделий</a></li>
+              <a href="./developer.html" class="navbar__text">Каталог изделий</a></li>
             <li class="navbar__item">
               <a href="./about.html" class="navbar__text">О компании</a></li>
             <li class="navbar__item">
@@ -44,7 +43,7 @@
             <li class="menu-mobile__item">
               <a href="./index.html" class="menu-mobile__text">Главная</a></li>
             <li class="menu-mobile__item">
-              <a href="./catalog.html" class="menu-mobile__text">Каталог изделий</a></li>
+              <a href="./developer.html" class="menu-mobile__text">Каталог изделий</a></li>
             <li class="menu-mobile__item">
               <a href="./about.html" class="menu-mobile__text">О компании</a></li>
             <li class="menu-mobile__item">
@@ -82,7 +81,7 @@
               <button class="button hero-button__catalog">Каталог изделий</button> 
             </form>
             <!-- /.hero-button__catalog -->
-            <button class="button hero-button__order">Оформить заказ</button> 
+          <button id="heroButton" href="#orderSection" class="button hero-button__order">Оформить заказ</button>
             <!-- /.hero-button__order -->
           </div>
           <!-- /.hero-button -->
@@ -300,7 +299,7 @@
     </section>
     <!-- /.section works -->
 
-    <section class="section order">
+    <section id="orderSection" class="section order">
       <div class="container">
         <div class="order-block">
           <h2 class="section-title order__title">Оформить заказ</h2>
@@ -419,13 +418,32 @@
       <!-- /.footer-info -->
     </div>
     <!-- /.container -->
-
   </footer>
+
+  <div id="modal" class="modal">
+    <div id="overlay" class="modal-overlay"></div>
+    <div class="modal-dialog">
+      <button id="close-mdl" class="modal-dialog__close">&times;</button>
+      <h3 class="modal-dialog__title">Закажите звонок</h3>
+      <span class="modal-dialog__subtitle">Заполните и отправьте заявку, после чего в течение 5 минут с вами свяжется наш менеджер</span>
+      <form action="#" class="form modal-dialog__form">
+        <input type="text" class="input modal-dialog__input" placeholder="Введите своё имя">
+        <input type="tel" class="input modal-dialog__input" placeholder="Введите свой номер">
+        <button id="submit-btn" class="button modal-dialog__button">Отправить</button>
+      </form>
+      <div id="success" class="modal-success">
+        <h4 class="modal-dialog__title">Заявка успешно отправлена!</h4>
+        <span class="modal-dialog__subtitle">Благодарим вас за оформление заявки! Ожидайте звонка от нашего менеджера.</span>
+      </div>
+    </div>
+  </div>
+
   <!-- Подключение скриптов -->
   <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
   <script src="./js/mobileMenu.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/function.js"></script>
   <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
-  <script src="./libs/jqueryFormstylerTheme/jquery.formstyler.min.js"></script>
+  <script src="./libs/select2/select2.min.js"></script>
 </body>
 </html>
