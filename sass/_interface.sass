@@ -62,10 +62,6 @@ a
     box-shadow: 0px 0px 3px $bg-color
     border: 2px solid lighten($bg-color, 10%)
     color: $white
-  &:focus::placeholder
-    transition: 0.4s
-    transform: translateY(-50px)
-    z-index: -1
 .contact
   color: $main-color
   img 
@@ -349,14 +345,20 @@ a
     transform: rotate(1deg)
   
 // стилизация select2
+.select2-container--classic
+  font-size: 13px
 .select2-container--classic .select2-selection--single
   background-color: $main-color
   border: 2px solid $second-color
   background-image: none
   border-radius: 5px
+  height: 40px
+  display: flex
+  align-items: center
 .select2-container--classic .select2-selection--single .select2-selection__rendered
   color: grey
-  font-size: 14px
+  font-size: 13px
+  +reg
 .select2-container--classic.select2-container--open.select2-container--below .select2-selection--single  
   box-shadow: 0px 0px 3px $bg-color
   border: 2px solid lighten($bg-color, 10%)
@@ -368,6 +370,34 @@ a
   background-image: none
   background-color: $main-color
   height: 24px
-  top: 2px
+  top: 8px
+  right: 2px
 .select2-container--classic .select2-selection--single .select2-selection__arrow b
   border-color: $bg-color transparent transparent transparent
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b
+  border-color: transparent transparent $bg-color transparent
+
+// Валидация форм
+div.invalid
+  font-size: 12px
+  color: lighten(red, 25)
+.form-input
+  position: relative
+#userName-error
+  margin-top: -10px
+#userPhone-error
+  margin-top: -10px
+#userNameModal-error
+  margin-top: -13px
+  margin-bottom: 10px
+#userPhoneModal-error
+  margin-top: -13px
+
+
+// ОТКЛЮЧЕННЫЕ СЕКЦИИ
+.team
+  display: none
+.choice
+  display: none
+.sidebar
+  display: none

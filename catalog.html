@@ -6,15 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Decor Epoxy - Каталог изделий</title>
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./libs/jqueryFormstylerTheme/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.theme.default.min.css">
 </head>
 <body>
 
 <!-- Шапка -->
-  <nav class="navbar">
+<nav class="navbar">
     <div class="container navbar-container">
       <div class="navbar-block">
         <!-- Логотип -->
@@ -28,7 +25,7 @@
             <li class="navbar__item">
               <a href="./index.html" class="navbar__text">Главная</a></li>
             <li class="navbar_active">
-              <a href="./developer.html" class="navbar__text">Каталог изделий</a></li>
+              <a href="./catalog.html" class="navbar__text">Каталог изделий</a></li>
             <li class="navbar__item">
               <a href="./about.html" class="navbar__text">О компании</a></li>
             <li class="navbar__item">
@@ -45,7 +42,7 @@
             <li class="menu-mobile__item">
               <a href="./index.html" class="menu-mobile__text">Главная</a></li>
             <li class="menu-mobile__item">
-              <a href="./developer.html" class="menu-mobile__text">Каталог изделий</a></li>
+              <a href="./catalog.html" class="menu-mobile__text">Каталог изделий</a></li>
             <li class="menu-mobile__item">
               <a href="./about.html" class="menu-mobile__text">О компании</a></li>
             <li class="menu-mobile__item">
@@ -64,7 +61,7 @@
         </div>
       </div>
     </div>
-  </nav>
+</nav>
 
   <main>
   <section class="back-navbar"></section>
@@ -103,7 +100,7 @@
         </div>
       </div>
       <div class="catalog">
-        <h1 class="catalog__title">Все категории товаров</h1>
+        <h1 class="catalog__title">Все товары</h1>
         <div class="catalog-sort">
           <span class="catalog-sort__title">Сортировать по:</span>
           <select class="catalog-sort__select" name="sort" id="">
@@ -113,42 +110,22 @@
           </select>
         </div>
         <div class="cards catalog__cards">
-          <div class="card">
-            <img src="./img/catalog/table-1.jpg" alt="" class="card__image">
-            <h3 class="card__title">Стол с эпоксидной смолой и камнем</h3>
-            <span class="card__price">80 000 руб.</span>
-            <a href="#" class="card__more">Узнать подробнее</a>
-          </div>
-          <div class="card">
-            <img src="./img/catalog/table-2.jpg" alt="" class="card__image">
-            <h3 class="card__title">Стол с эпоксидной смолой</h3>
-            <span class="card__price">30 000 руб.</span>
-            <a href="./card.html" class="card__more">Узнать подробнее</a>
-          </div>
-          <div class="card">
-            <img src="./img/catalog/table-3.jpg" alt="" class="card__image">
-            <h3 class="card__title">Поднос с эпоксидной смолой</h3>
-            <span class="card__price">150 000 руб.</span>
-            <a href="#" class="card__more">Узнать подробнее</a>
-          </div>
-          <div class="card">
-            <img src="./img/catalog/table-1.jpg" alt="" class="card__image">
-            <h3 class="card__title">Стол с эпоксидной смолой и камнем</h3>
-            <span class="card__price">80 000 руб.</span>
-            <a href="#" class="card__more">Узнать подробнее</a>
-          </div>
-          <div class="card">
-            <img src="./img/catalog/table-2.jpg" alt="" class="card__image">
-            <h3 class="card__title">Стол с эпоксидной смолой</h3>
-            <span class="card__price">30 000 руб.</span>
-            <a href="#" class="card__more">Узнать подробнее</a>
-          </div>
-          <div class="card">
-            <img src="./img/catalog/table-3.jpg" alt="" class="card__image">
-            <h3 class="card__title">Поднос с эпоксидной смолой</h3>
-            <span class="card__price">150 000 руб.</span>
-            <a href="#" class="card__more">Узнать подробнее</a>
-          </div>
+          <a href="#">
+            <div class="card">
+              <img src="./img/catalog/table-1.jpg" alt="" class="card__image">
+              <h3 class="card__title">Стол с эпоксидной смолой и камнем</h3>
+              <span class="card__price">80 000 руб.</span>
+              <a href="#" class="card__more">Узнать подробнее</a>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <img src="./img/catalog/table-1.jpg" alt="" class="card__image">
+              <h3 class="card__title">Стол с эпоксидной смолой и камнем</h3>
+              <span class="card__price">80 000 руб.</span>
+              <a href="#" class="card__more">Узнать подробнее</a>
+            </div>
+          </a>
         </div>
         <button class="button catalog__button">Загрузить еще</button>
       </div>
@@ -158,76 +135,90 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-block">
-        <div class="footer__logo">
-          <img src="./img/main/footer/logoWhite.png" alt="">
-        </div>
-        <!-- /.footer-logo -->
-        <div class="footer-links">
-          <ul class="footer-links__list">
-            <li class="footer-links__item">
-              <span><a href="#">Главная</a></span>
-            </li>
-            <li class="footer-links__item">
-              <span><a href="#">О компании</a></span>
-            </li>
-            <li class="footer-links__item">
-              <span><a href="#">Каталог товаров</a></span>
-            </li>
-            <li class="footer-links__item">
-              <span><a href="#">Контакты</a></span>
-            </li>
-          </ul>
-          <ul class="footer-links__list">
-            <li class="footer-links__item">
-              <span><a href="#">Условия доставки</a></span>
-            </li>
-            <li class="footer-links__item">
-              <span><a href="#">Условия оплаты</a></span>
-            </li>
-            <li class="footer-links__item">
-              <span><a href="#">Акции</a></span>
-            </li>
-          </ul>
-        </div>
-        <!-- /.footer-link -->
-        <div class="footer-social">
-          <div class="footer-social__instagram">
-            <img src="./img/main/footer/instagram.png" alt="Инстаграм">
-            <span><a href="https://www.instagram.com/decor_epoxy/" target="_blank">Мы в Instagram!</a></span>
+      <div class="container">
+        <div class="footer-block">
+          <div class="footer__logo">
+            <img src="./img/main/footer/logoWhite.png" alt="">
           </div>
-          <img class="footer-social__qrcode" src="./img/main/footer/qrcode.png" alt="">
+          <!-- /.footer-logo -->
+          <div class="footer-links">
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <span><a href="./index.html">Главная</a></span>
+              </li>
+              <li class="footer-links__item">
+                <span><a href="./about.html">О компании</a></span>
+              </li>
+              <li class="footer-links__item">
+                <span><a href="./catalog.html">Каталог товаров</a></span>
+              </li>
+              <li class="footer-links__item">
+                <span><a href="./contacts.html">Контакты</a></span>
+              </li>
+            </ul>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <span><a href="./contacts.html">Условия доставки</a></span>
+              </li>
+              <li class="footer-links__item">
+                <span><a href="./contacts.html">Условия оплаты</a></span>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-link -->
+          <div class="footer-social">
+            <div class="footer-social__instagram">
+              <img src="./img/main/footer/instagram.png" alt="Инстаграм">
+              <span><a href="https://www.instagram.com/decor_epoxy/" target="_blank">Мы в Instagram!</a></span>
+            </div>
+            <img class="footer-social__qrcode" src="./img/main/footer/qrcode.png" alt="">
+          </div>
+          <!-- /.footer-social -->
+          <div class="footer-contacts">
+            <a href="tel:+78432495388" class="contact footer-contacts__item phone"><img src="./img/main/footer/footerPhone.svg" alt="Телефон">+7 (843) 249-53-88</a>
+            <a href="https://wa.me/79274423768" class="contact footer-contacts__item whatsapp"><img src="./img/main/footer/whatsapp.svg" alt="whatsapp">+7 (927) 442-37-68</a>
+            <a href="mailto:decorepoxy@mail.ru" class="contact footer-contacts__item email"><img src="./img/main/footer/envelope.svg" alt="Почта">decorepoxy@mail.ru</a>
+            <button class="button callback footer-contacts__button">Заказать звонок</button>
+          </div>
+          <!-- /.footer-contacts -->
         </div>
-        <!-- /.footer-social -->
-        <div class="footer-contacts">
-          <a href="tel:+78432495388" class="contact footer-contacts__item phone"><img src="./img/main/footer/footerPhone.svg" alt="Телефон">+7 (843) 249-53-88</a>
-          <a href="https://wa.me/79274423768" class="contact footer-contacts__item whatsapp"><img src="./img/main/footer/whatsapp.svg" alt="whatsapp">+7 (927) 442-37-68</a>
-          <a href="mailto:decorepoxy@mail.ru" class="contact footer-contacts__item email"><img src="./img/main/footer/envelope.svg" alt="Почта">decorepoxy@mail.ru</a>
-          <button class="button callback footer-contacts__button">Заказать звонок</button>
+        <!-- /.footer-block -->
+        <div class="footer-info">
+          <div class="footer-info__author">
+            <span class="footer-info__text">© Decorepoxy 2019г. Все права защищены.</span>
+            <span>Разработчик сайта: <a href="https://www.instagram.com/sergeev.site/" target="_blank" class="footer-info__link">Андрей Сергеев</a></span>
+          </div>
+          <span><a href="./politica.html" target="_blank" class="footer-info__link">Политика конфиденциальности</a></span>
         </div>
-        <!-- /.footer-contacts -->
+        <!-- /.footer-info -->
       </div>
-      <!-- /.footer-block -->
-      <div class="footer-info">
-        <div class="footer-info__author">
-          <span class="footer-info__text">© Decorepoxy 2019г. Все права защищены.</span>
-          <span>Разработчик сайта: <a href="https://www.instagram.com/sergeev.site/" target="_blank" class="footer-info__link">Андрей Сергеев</a></span>
-        </div>
-        <span><a href="#" target="_blank" class="footer-info__link">Политика конфиденциальности</a></span>
-      </div>
-      <!-- /.footer-info -->
-    </div>
-    <!-- /.container -->
+      <!-- /.container -->
+    </footer>
 
-  </footer>
+
+    <div id="modal" class="modal">
+      <div id="overlay" class="modal-overlay"></div>
+      <div class="modal-dialog">
+        <button id="close-mdl" class="modal-dialog__close">&times;</button>
+        <h3 class="modal-dialog__title">Закажите звонок</h3>
+        <span class="modal-dialog__subtitle">Заполните и отправьте заявку, после чего в течение 5 минут с вами свяжется наш менеджер</span>
+        <form id="form-modal" action="#" class="form modal-dialog__form">
+          <input required name="userNameModal" type="text" class="input modal-dialog__input" placeholder="Введите своё имя" maxlength="40">
+          <input required name="userPhoneModal" type="tel" class="phone input modal-dialog__input" placeholder="Введите свой номер">
+          <button type="submit" id="submit-btn" class="button modal-dialog__button">Отправить</button>
+        </form>
+        <div id="success" class="modal-success">
+          <h4 class="modal-dialog__title">Заявка успешно отправлена!</h4>
+          <span class="modal-dialog__subtitle">Благодарим вас за оформление заявки! Ожидайте звонка от нашего менеджера.</span>
+        </div>
+      </div>
+    </div>
+
   <!-- Подключение скриптов -->
   <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
   <script src="./js/mobileMenu.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/function.js"></script>
   <script src="https://kit.fontawesome.com/3a16056712.js"></script>
-  <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
-  <script src="./libs/jqueryFormstylerTheme/jquery.formstyler.min.js"></script>
-  <script src="./libs/fotorama/fotorama.js"></script>
 </body>
 </html>

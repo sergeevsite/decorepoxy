@@ -122,3 +122,24 @@
 .slick-disabled
   img
     display: none
+// стилизация точек
+.materials-dots
+  list-style: none
+  display: flex
+  justify-content: center
+  margin-top: 10px
+  li
+    margin: 0 4px
+    button
+      outline: none
+      border: none
+      border-radius: 50%
+      background-color: lighten($second-color, 30)
+      width: 13px
+      height: 13px
+      font-size: 10px
+      +reg
+      color: $main-color
+  .slick-active
+    button
+      background-color: $second-color

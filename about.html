@@ -7,13 +7,11 @@
   <title>Decor Epoxy - О компании</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./libs/slickSlider/slick.css">
-  <link rel="stylesheet" href="./libs/jqueryFormstylerTheme/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./libs/fotorama/fotorama.css">
 </head>
 <body>
 <!-- Шапка -->
-  <nav class="navbar">
+<nav class="navbar">
     <div class="container navbar-container">
       <div class="navbar-block">
         <!-- Логотип -->
@@ -27,7 +25,7 @@
             <li class="navbar__item">
               <a href="./index.html" class="navbar__text">Главная</a></li>
             <li class="navbar__item">
-              <a href="./developer.html" class="navbar__text">Каталог изделий</a></li>
+              <a href="./catalog.html" class="navbar__text">Каталог изделий</a></li>
             <li class="navbar_active">
               <a href="./about.html" class="navbar__text">О компании</a></li>
             <li class="navbar__item">
@@ -44,7 +42,7 @@
             <li class="menu-mobile__item">
               <a href="./index.html" class="menu-mobile__text">Главная</a></li>
             <li class="menu-mobile__item">
-              <a href="./developer.html" class="menu-mobile__text">Каталог изделий</a></li>
+              <a href="./catalog.html" class="menu-mobile__text">Каталог изделий</a></li>
             <li class="menu-mobile__item">
               <a href="./about.html" class="menu-mobile__text">О компании</a></li>
             <li class="menu-mobile__item">
@@ -63,7 +61,7 @@
         </div>
       </div>
     </div>
-  </nav>
+</nav>
 
   <main>
   <div class="back-navbar"></div>
@@ -132,7 +130,7 @@
               <img src="./img/main/works/right-arrow.svg" alt="">
             </div>
           </div>
-
+          <div class="materials-dots"></div>
           <div class="materials-help">
             <img src="./img/about/materials/help.svg" alt="" class="materials-help__icon">
             <a href="#" class="materials-help__text"><span>подробнее о древесине</span></a>
@@ -167,7 +165,7 @@
               <img src="./img/main/works/right-arrow.svg" alt="">
             </div>
           </div>
-
+          <div class="materials-dots"></div>
           <div class="materials-help">
             <img src="./img/about/materials/help.svg" alt="" class="materials-help__icon">
             <a href="#" class="materials-help__text"><span>подробнее об эпоксидной смоле</span></a>
@@ -317,27 +315,24 @@
         <div class="footer-links">
           <ul class="footer-links__list">
             <li class="footer-links__item">
-              <span><a href="#">Главная</a></span>
+              <span><a href="./index.html">Главная</a></span>
             </li>
             <li class="footer-links__item">
-              <span><a href="#">О компании</a></span>
+              <span><a href="./about.html">О компании</a></span>
             </li>
             <li class="footer-links__item">
-              <span><a href="#">Каталог товаров</a></span>
+              <span><a href="./catalog.html">Каталог товаров</a></span>
             </li>
             <li class="footer-links__item">
-              <span><a href="#">Контакты</a></span>
+              <span><a href="./contacts.html">Контакты</a></span>
             </li>
           </ul>
           <ul class="footer-links__list">
             <li class="footer-links__item">
-              <span><a href="#">Условия доставки</a></span>
+              <span><a href="./contacts.html">Условия доставки</a></span>
             </li>
             <li class="footer-links__item">
-              <span><a href="#">Условия оплаты</a></span>
-            </li>
-            <li class="footer-links__item">
-              <span><a href="#">Акции</a></span>
+              <span><a href="./contacts.html">Условия оплаты</a></span>
             </li>
           </ul>
         </div>
@@ -364,19 +359,36 @@
           <span class="footer-info__text">© Decorepoxy 2019г. Все права защищены.</span>
           <span>Разработчик сайта: <a href="https://www.instagram.com/sergeev.site/" target="_blank" class="footer-info__link">Андрей Сергеев</a></span>
         </div>
-        <span><a href="#" target="_blank" class="footer-info__link">Политика конфиденциальности</a></span>
+        <span><a href="./politica.html" target="_blank" class="footer-info__link">Политика конфиденциальности</a></span>
       </div>
       <!-- /.footer-info -->
     </div>
     <!-- /.container -->
-
   </footer>
+
+  <div id="modal" class="modal">
+    <div id="overlay" class="modal-overlay"></div>
+    <div class="modal-dialog">
+      <button id="close-mdl" class="modal-dialog__close">&times;</button>
+      <h3 class="modal-dialog__title">Закажите звонок</h3>
+      <span class="modal-dialog__subtitle">Заполните и отправьте заявку, после чего в течение 5 минут с вами свяжется наш менеджер</span>
+      <form id="form-modal" action="#" class="form modal-dialog__form">
+        <input required name="userNameModal" type="text" class="input modal-dialog__input" placeholder="Введите своё имя" maxlength="40">
+        <input required name="userPhoneModal" type="tel" class="phone input modal-dialog__input" placeholder="Введите свой номер">
+        <button type="submit" id="submit-btn" class="button modal-dialog__button">Отправить</button>
+      </form>
+      <div id="success" class="modal-success">
+        <h4 class="modal-dialog__title">Заявка успешно отправлена!</h4>
+        <span class="modal-dialog__subtitle">Благодарим вас за оформление заявки! Ожидайте звонка от нашего менеджера.</span>
+      </div>
+    </div>
+  </div>
+
   <!-- Подключение скриптов -->
   <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
   <script src="./libs/slickSlider/slick.min.js"></script>
   <script src="./js/mobileMenu.js"></script>
   <script src="./js/slickSlider.js"></script>
-
-  <!-- <script src="./js/main.js"></script> -->
+  <script src="./js/function.js"></script>
 </body>
 </html>

@@ -16,6 +16,8 @@ $('.wood-slider').slick({
       settings: {
         variableWidth: false,
         arrows: false,
+        dots: true,
+        dotsClass: 'materials-dots',
       }
     },
   ]
@@ -36,6 +38,8 @@ $('.epoxy-slider').slick({
       settings: {
         variableWidth: false,
         arrows: false,
+        dots: true,
+        dotsClass: 'materials-dots',
       }
     },
   ]
