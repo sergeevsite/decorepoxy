@@ -61,28 +61,6 @@ $("#form-modal").validate({
  // Маска для телефона
  $(".phone").mask("+7 (999) 999-99-99");
 
-// Форма модального окна при отправке
-      var submitBtn = $('#submit-btn');
-      var modalSuccess = $('#success');
-
-      submitBtn.on('submit', function(e) {
-      e.preventDefault();
-      if ($('#modal-phone').val().length) {
-        $.ajax({
-          url: 'mail.php',
-          type: 'POST',
-          data: $(this).serialize(),
-          success: function(data) {
-            $(this).closest('form').find("input[type=tel]").val('');
-            modalSuccess.addClass('modal-success_active'); 
-            modal.removeClass('modal_active');
-            $('input').removeClass('valid')
-          }
-        }); 
-      } else {
-      }
-    });
-
 // инициализация select
 $('select').select2({
   minimumResultsForSearch: Infinity,

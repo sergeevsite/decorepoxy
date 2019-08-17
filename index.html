@@ -304,13 +304,13 @@
         <div class="order-block">
           <h2 class="section-title order__title">Оформить заказ</h2>
           <span class="order__subtitle">После оформления заявки в течение 5 минут с вами свяжется менеджер</span>
-          <form id="form-order" action="#" class="form order__form">
+          <form id="form-order" action="mail.php" method="POST" class="form order__form">
             <div class="form__title contacts">
               <span class="form__text">Контактные данные</span>
             </div>
             <div class="form-input">
-              <input name="userName" required type="text" class="input form__name" placeholder="Введите имя" maxlength="40">
-              <input id="userPhone" name="userPhone" required type="tel" class="phone input form__tel" placeholder="Введите телефон">
+              <input id="user-name" name="userName" required type="text" class="input form__name" placeholder="Введите имя" maxlength="40">
+              <input id="user-phone" name="userPhone" required type="tel" class="phone input form__tel" placeholder="Введите телефон">
             </div>
             <div class="form__title">
               <span class="form__text">Характеристики изделия</span>
@@ -318,14 +318,14 @@
             <div class="form-input">
               <span class="form__label">Размеры, см.</span>
               <div class="form-dimension">
-                <input type="text" class="input form__length" placeholder="Длина" maxlength="3">
-                <input type="text" class="input form__width" placeholder="Ширина" maxlength="3">
-                <input type="text" class="input form__hight" placeholder="Высота" maxlength="3">
+                <input name="userLength" type="text" class="input form__length" placeholder="Длина" maxlength="3">
+                <input name="userWidth" class="input form__width" placeholder="Ширина" maxlength="3">
+                <input name="userHight" class="input form__hight" placeholder="Высота" maxlength="3">
               </div>
               <span class="form__label">Порода дерева</span>
               <div class="form-wood">
                 <!-- <div class="form__help">?</div> -->
-                <select class="form-select form__wood" name="wood" id="text">
+                <select name="userWood" class="form-select form__wood" name="wood" id="text">
                   <option value="Любая">Любая</option>
                   <option value="Орех">Орех</option>
                   <option value="Дуб">Дуб</option>
@@ -336,7 +336,7 @@
               <span class="form__label">Цвет эпоксидной смолы</span>
               <div class="form-color">
                 <!-- <div class="form__help">?</div> -->
-                <select class="form-select form__color" name="color" id="">
+                <select name="userEpoxy" class="form-select form__color" name="color" id="">
                   <option value="Любой">Любой</option>
                   <option value="Синий">Синий</option>
                   <option value="Голубой">Голубой</option>
@@ -345,7 +345,7 @@
               </div>
               <span class="form__label">Дополнительно</span>
               <div class="form-extra">
-                <textarea class="input form__extra" cols="30" rows="10" maxlength="170" placeholder="Введите дополнительные пожелания. Они будут учитываться при согласовании заявки."></textarea>
+                <textarea name="userExtra" class="input form__extra" cols="30" rows="10" maxlength="170" placeholder="Введите дополнительные пожелания. Они будут учитываться при согласовании заявки."></textarea>
               </div>
               <button type="submit" class="button form__button">Оформить заказ</button>
             </div>
@@ -442,6 +442,7 @@
   <script src="./js/mobileMenu.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/function.js"></script>
+  <!-- <script src="./js/mail.js"></script> -->
   <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
   <script src="./libs/select2/select2.min.js"></script>
   <script src="./libs/jqueryValidate/jquery.validate.min.js"></script>
